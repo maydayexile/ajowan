@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AJOWAN 印茴｜淨化系列 2026 行銷流程規劃</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600&family=Cinzel:wght@400;600&family=Noto+Sans+TC:wght@300;400;500&display=swap');
+
+  :root {
+    --ink: #1a1410;
+    --smoke: #f5f0e8;
+    --ash: #e8e0d0;
+    --ember: #8b4a1c;
+    --gold: #c4922a;
+    --mist: #6b7c6e;
+    --thunder: #2d3a5e;
+    --sage: #7a9b76;
+    --cream: #faf6ed;
+    --shadow: rgba(26,20,16,0.12);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans TC', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--ink);
+    color: var(--smoke);
+    padding: 48px 40px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 80% 50%, rgba(196,146,42,0.08) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 10% 80%, rgba(45,58,94,0.3) 0%, transparent 60%);
+  }
+  header::after {
+    content: '⚡';
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 120px;
+    opacity: 0.06;
+    pointer-events: none;
+  }
+  .header-inner { position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; }
+  .brand-label {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    letter-spacing: 0.35em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: clamp(24px, 3vw, 38px);
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+  }
+  h1 em {
+    font-style: normal;
+    color: var(--gold);
+    font-weight: 600;
+  }
+  .golden-tagline {
+    margin-top: 20px;
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(196,146,42,0.18), rgba(196,146,42,0.08));
+    border: 1px solid rgba(196,146,42,0.4);
+    border-left: 3px solid var(--gold);
+    color: var(--smoke);
+    font-size: 14px;
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 0.06em;
+    padding: 10px 18px;
+    border-radius: 4px;
+  }
+  .golden-tagline strong { color: var(--gold); font-weight: 600; font-size: 15px; }
+
+  .header-meta {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    font-size: 13px;
+    color: rgba(245,240,232,0.6);
+    letter-spacing: 0.05em;
+  }
+  .header-meta span { display: flex; align-items: center; gap: 6px; }
+  .header-meta strong { color: var(--smoke); }
+
+  /* ── LEGEND ── */
+  .legend {
+    background: var(--smoke);
+    border-bottom: 1px solid var(--ash);
+    padding: 16px 40px;
+  }
+  .legend-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+  }
+  .legend-title {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--ember);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-right: 4px;
+  }
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  .tag-web   { background: rgba(122,155,118,0.15); color: var(--sage); border: 1px solid rgba(122,155,118,0.3); }
+  .tag-social{ background: rgba(196,146,42,0.12);  color: var(--gold); border: 1px solid rgba(196,146,42,0.3); }
+  .tag-edm   { background: rgba(139,74,28,0.12);   color: var(--ember); border: 1px solid rgba(139,74,28,0.3); }
+  .tag-line  { background: rgba(107,124,110,0.12); color: var(--mist); border: 1px solid rgba(107,124,110,0.3); }
+  .tag-sms   { background: rgba(45,58,94,0.12);    color: var(--thunder); border: 1px solid rgba(45,58,94,0.3); }
+  .tag-kol   { background: rgba(26,20,16,0.08);    color: var(--ink); border: 1px solid rgba(26,20,16,0.2); }
+
+  /* ── TIMELINE WRAPPER ── */
+  .timeline {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 40px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* ── PHASE BLOCK ── */
+  .phase {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    border: 1px solid var(--ash);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 12px var(--shadow);
+    background: #fff;
+    transition: box-shadow 0.2s;
+  }
+  .phase:hover { box-shadow: 0 6px 28px var(--shadow); }
+
+  /* Phase sidebar */
+  .phase-sidebar {
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    border-right: 1px solid var(--ash);
+  }
+  .phase-1 .phase-sidebar { background: linear-gradient(160deg, #f0e8d8 0%, #e8dcc8 100%); }
+  .phase-2 .phase-sidebar { background: linear-gradient(160deg, #e8f0e8 0%, #d8e8d8 100%); }
+  .phase-3 .phase-sidebar { background: linear-gradient(160deg, #d8e8f0 0%, #c8d8e8 100%); }
+  .phase-4 .phase-sidebar { background: linear-gradient(160deg, #f0d8d8 0%, #e8c8c8 100%); }
+
+  .phase-num {
+    font-family: 'Cinzel', serif;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    opacity: 0.5;
+    text-transform: uppercase;
+  }
+  .phase-name {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .phase-date {
+    font-size: 12px;
+    opacity: 0.6;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+  }
+  .phase-theme {
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 1.6;
+    opacity: 0.75;
+    font-style: italic;
+  }
+
+  /* Phase content grid */
+  .phase-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) repeat(3, minmax(100px, 120px));
+    border-top: none;
+  }
+
+  /* Channel cell */
+  .channel {
+    padding: 20px 18px;
+    border-right: 1px solid var(--ash);
+    border-bottom: none;
+    vertical-align: top;
+  }
+  .channel:last-child { border-right: none; }
+
+  .ch-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--ash);
+  }
+  .ch-icon { font-size: 15px; }
+  .ch-name {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--ember);
+  }
+
+  .ch-items { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .ch-items li {
+    font-size: 12.5px;
+    line-height: 1.6;
+    color: #3a3028;
+    padding-left: 12px;
+    position: relative;
+  }
+  .ch-items li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 10px;
+    top: 3px;
+  }
+  .ch-items li strong { color: var(--ember); font-weight: 500; }
+
+  .ch-note {
+    margin-top: 8px;
+    font-size: 11px;
+    color: var(--mist);
+    font-style: italic;
+    line-height: 1.5;
+    padding-left: 12px;
+  }
+
+  /* Narrow channels (EDM / LINE / 簡訊 / KOL) */
+  .channel-narrow .ch-items li { font-size: 12px; }
+
+  /* send badge */
+  .send-badge {
+    display: inline-block;
+    background: var(--ember);
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 7px;
+    border-radius: 10px;
+    letter-spacing: 0.05em;
+    margin-top: 6px;
+  }
+  .send-badge.second { background: var(--thunder); }
+
+  /* KOL direction */
+  .kol-direction {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #3a3028;
+  }
+  .kol-tag {
+    display: inline-block;
+    background: rgba(196,146,42,0.1);
+    border: 1px solid rgba(196,146,42,0.3);
+    color: var(--gold);
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin: 2px 2px 2px 0;
+  }
+
+  /* ── TABLE HEADER ROW ── */
+  .col-headers {
+    display: grid;
+    grid-template-columns: 220px repeat(3, 1fr) repeat(3, minmax(100px, 120px));
+    background: var(--ink);
+    color: var(--smoke);
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    margin-bottom: 0;
+    border: 1px solid var(--ink);
+  }
+  .col-headers > div {
+    padding: 12px 18px;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border-right: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .col-headers > div:first-child { color: var(--gold); font-family: 'Cinzel', serif; }
+  .col-headers > div:last-child { border-right: none; }
+
+  .phases-wrapper {
+    border-radius: 0 0 12px 12px;
+    overflow: hidden;
+  }
+  .phases-wrapper .phase {
+    border-radius: 0;
+    border-top: none;
+    margin-bottom: 0;
+  }
+  .phases-wrapper .phase:last-child {
+    border-radius: 0 0 12px 12px;
+  }
+  .phases-wrapper .phase + .phase {
+    border-top: 1px solid var(--ash);
+  }
+
+  /* ── FOOTER NOTES ── */
+  .footnotes {
+    max-width: 1400px;
+    margin: 0 auto 40px;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  .fn-card {
+    background: var(--smoke);
+    border: 1px solid var(--ash);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .fn-card h3 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ember);
+    margin-bottom: 10px;
+    letter-spacing: 0.08em;
+  }
+  .fn-card p, .fn-card li {
+    font-size: 12.5px;
+    line-height: 1.8;
+    color: #4a3e34;
+  }
+  .fn-card ul { padding-left: 16px; }
+
+  @media (max-width: 900px) {
+    .phase { grid-template-columns: 1fr; }
+    .phase-sidebar { border-right: none; border-bottom: 1px solid var(--ash); }
+    .phase-content { grid-template-columns: 1fr 1fr; }
+    .channel { border-bottom: 1px solid var(--ash); }
+    .col-headers { display: none; }
+    header, .legend, .timeline, .footnotes { padding-left: 20px; padding-right: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <p class="brand-label">AJOWAN 印茴 ｜ Marketing Plan 2026</p>
+    <h1>淨化系列 <em>符仔水 × 滾珠油</em><br>行銷流程規劃</h1>
+    <div class="golden-tagline">⚡ 2026 核心主軸：午時水 ＋ 雷擊木純露 ＋ 端午曬過的艾草 ＝ <strong>淨化法力無邊版</strong></div>
+    <div class="header-meta">
+      <span>📅 <strong>預購期</strong> 2026 / 06 / 19 ~ 07 / 09</span>
+      <span>🛒 <strong>正式銷售</strong> 2026 / 08 / 10 ~ 09 / 10</span>
+      <span>🌿 <strong>主題節點</strong> 端午午時水收集 → 中元節淨化高峰</span>
+    </div>
+  </div>
+</header>
+
+<div class="legend">
+  <div class="legend-inner">
+    <span class="legend-title">行銷管道</span>
+    <span class="tag tag-web">🌐 官網</span>
+    <span class="tag tag-social">📱 FB / IG</span>
+    <span class="tag tag-edm">📧 EDM</span>
+    <span class="tag tag-line">💬 LINE</span>
+    <span class="tag tag-sms">📩 簡訊</span>
+    <span class="tag tag-kol">🎙 KOL</span>
+  </div>
+</div>
+
+<div class="timeline">
+
+  <!-- Column headers -->
+  <div class="col-headers">
+    <div>階段</div>
+    <div>🌐 官網</div>
+    <div>📱 FB / IG</div>
+    <div>🎙 KOL 方向</div>
+    <div>📧 EDM</div>
+    <div>💬 LINE</div>
+    <div>📩 簡訊</div>
+  </div>
+
+  <div class="phases-wrapper">
+
+    <!-- ═══ PHASE 1：製作預告 ═══ -->
+    <div class="phase phase-1">
+      <div class="phase-sidebar">
+        <div class="phase-name">端午製作<br>預告期</div>
+        <div class="phase-date">📅 6 / 16 ~ 6 / 18<br>端午氛圍佈局<br><br>⚡ 6 / 19 端午當天<br>午時水收集 + 預購開跑</div>
+        <div class="phase-theme">「一年只有一次的午時水，<br>就在這個端午降臨」</div>
+      </div>
+      <div class="phase-content">
+
+        <div class="channel">
+          <div class="ch-header"><span class="ch-icon">🌐</span><span class="ch-name">官網</span></div>
+          <ul class="ch-items">
+            <li>部落格：何謂「午時水」？揭開端午陽氣至極的神秘意義</li>
+          </ul>
+        </div>
+
+        <div class="channel">
+          <div class="ch-header"><span class="ch-icon">📱</span><span class="ch-name">FB / IG</span></div>
+          <ul class="ch-items">
+            <li><strong>6/16～6/18｜FB 軟文：</strong>每年端午，印茴都有自己的儀式感</li>
+            <li><strong>6/16～6/18｜IG 限動：</strong>端午你有什麼儀式感？（投票 / 問答互動）</li>
+            <li><strong>6/19 端午當天｜IG 限動：</strong>收集午時水 + 採收端午曬過的艾草⸺符仔水原料入庫的儀式現場</li>
+            <li><strong>6/19 端午當天｜短影片：</strong>「這一天收集的，才是最純粹的陽氣」⸺美智館長說明端午收集午時水與艾草的意義</li>
+          </ul>
+        </div>
+
+        <div class="channel">
+          <div class="ch-header"><span class="ch-icon">🎙</span><span class="ch-name">KOL 方向</span></div>
+          <div class="kol-direction">
+            <div class="kol-tag">能量 / 靈性系</div>
+            <div class="kol-tag">生活風格系</div>
+            <p style="margin-top:8px">6/16～6/18 預熱：分享「你的端午淨化儀式是什麼？」開放式問題，帶出午時水神秘感，不須露出商品。</p>
+            <p style="margin-top:6px; color: var(--mist)">可提供品牌故事素材：2021 起源 → 2024 加入雷擊木 → 2025 端午曬艾草 → 2026 宣告完美，作為 KOL 說故事的腳本骨架。</p>
+            <p style="margin-top:6px; color: var(--mist)">⚠️ 已排程 KOL 均在 7 月後啟動，此階段如有合作需另行洽談。</p>
+          </div>
+        </div>
+
+        <div class="channel channel-narrow">
+          <div class="ch-header"><span class="ch-icon">📧</span><span class="ch-name">EDM</span></div>
+          <ul class="ch-items">
+            <li><span class="send-badge">預告發送</span></li>
+            <li><strong>6/16～6/18 發：</strong>主旨：🎟 端午前，先領券！淨化系列 6/19 預購開跑</li>
+            <li>內容：預告「農曆七月最強淨化武器即將回歸」＋<strong>隨信附上 95 折券碼</strong>（6/19～6/25 使用）</li>
+          </ul>
+        </div>
+
+        <div class="channel channel-narrow">
+          <div class="ch-header"><span class="ch-icon">💬</span><span class="ch-name">LINE</span></div>
+          <ul class="ch-items">
+            <li><span class="send-badge">預告發送</span></li>
+            <li><strong>6/16～6/18 發：</strong>🎟 淨化系列 6/19 預購開跑！95 折券已附在這則訊息，6/25 前下單可用</li>
+          </ul>
+        </div>
+
+        <div class="channel channel-narrow">
+          <div class="ch-header"><span class="ch-icon">📩</span><span class="ch-name">簡訊</span></div>
+          <ul class="ch-items">
+            <li>暫無</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ═══ PHASE 2：預購開跑 ═══ -->
+    <div class="phase phase-2">
+      <div class="phase-sidebar">
+        <div class="phase-name">預購開跑<br>上市期</div>
+        <div class="phase-date">📦 6 / 19 ~ 7 / 09<br>（預購最低價）</div>
+        <div class="phase-theme">「早鳥限定，以最低價格<br>預約這份純陽能量守護」</div>
+      </div>
+      <div class="phase-content">
+
+        <div class="channel">
+          <div class="ch-header"><span class="ch-icon">🌐</span><span class="ch-name">官網</span></div>
+          <ul class="ch-items">
+            <li>正式活動 Banner + 淨化系列銷售頁上線，標題強打「法力無邊版」</li>
+            <li>部落格：優化舊文〈用驅邪淨化的植物，陪你安心度過農曆七月！〉</li>
+          </ul>
+        </div>
+
+        <div class="channel">
+          <div class="ch-header"><span class="ch-icon">📱</span><span class="ch-name">FB / IG</span></div>
+          <ul class="ch-items">
+            <li><strong>FB 軟文（品牌故事）：</strong>「這已經是午時水最完美的比例和狀態了，不能再更好了。」⸺美智館長如何花五年煉出這一瓶淨化符仔水</li>
+            <li><strong>FB 軟文（成分）：</strong>三重陽氣：午時水 × 雷擊木純露（2024 加入）× 端午曬過的艾草純露（2025 加入）⸺三年疊加，2026 臻至完整</li>
+            <li><strong>IG 限動：</strong>預購倒數、製作現場影像</li>
+            <li><strong>IG 限動：</strong>符仔水 vs. 滾珠油⸺你適合哪一種？（左右滑動比較卡）</li>
+          </ul>
+        </div>
+
+        <div class="channel">
+          <div class="ch-header"><span class="ch-icon">🎙</span><span class="ch-name">KOL 方向</span></div>
+          <div class="kol-direction">
+            <div class="kol-tag">能量 / 靈性系</div>
+            <div class="kol-tag">芳療 / 香氛系</div>
+            <div class="kol-tag">日系生活風格</div>
+            <p style="margin-top:8px">開箱 + 使用情境：核心說法為「這是美智館長宣告不再改配方的版本」，強調稀缺性（限量）與完成感（法力無邊）。</p>
+            <p style="margin-top:6px; color: var(--mist)">引導受眾「每年的淨化符仔水都以當年端午現收的午時水製成，今年錯過就只能等明年」的感受。提供美智館長語錄作為 KOL 引用素材。</p>
+            <p style="margin-top:6px; color: var(--mist)">⚠️ 此檔期（6/19～7/9）尚無已排程 KOL，如需補強可考慮安排預購期開箱合作。</p>
+          </div>
+        </div>
+
+        <div class="channel channel-narrow">
+          <div class="ch-header"><span class="ch-icon">📧</span><span class="ch-name">EDM</span></div>
+          <ul class="ch-items">
+            <li><span class="send-badge">第一次發送</span></li>
+            <li><strong>6/19 發：</strong>主旨：⚡ 預購開跑！你的 95 折券今天起可以用了</li>
+            <li>內容：預購正式開跑通知＋提醒券碼使用期限（6/19～6/25）＋製作故事 + 兩款商品比較</li>
+          </ul>
+        </div>
+
+        <div class="channel channel-narrow">
+          <div class="ch-header"><span class="ch-icon">💬</span><span class="ch-name">LINE</span></div>
+          <ul class="ch-items">
+            <li><span class="send-badge">第一次發送</span></li>
+            <li><strong>6/19 發：</strong>⚡ 預購開跑！你的 95 折券今天起到 6/25 可用，預購最低價直接折上折</li>
+          </ul>
+        </div>
+
+        <div class="channel channel-narrow">
+          <div class="ch-header"><span class="ch-icon">📩</span><span class="ch-name">簡訊</span></div>
+          <ul class="ch-items">
+            <li><span class="send-badge">第一次發送</span></li>
+            <li><strong>6/19 發：</strong>【印茴】淨化系列預購開跑！95折券今起～6/25可用，點擊下單</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ═══ PHASE 3：中元節主力期 ═══ -->
+    <div class="phase phase-3">
+      <div class="phase-sidebar">
+        <div class="phase-name">中元節<br>主力期</div>
+        <div class="phase-date">🧿 8 / 10 ~ 9 / 01<br>（農曆七月旺季）</div>
+        <div class="phase-theme">「農曆七月，把看不見的<br>陰鬱與負能量都掃走」</div>
+      </div>
+      <div class="phase-content">
+
+        <div class="channel">
+          <div class="ch-header"><span class="ch-icon">🌐</span><span class="ch-name">官網</span></div>
+          <ul class="ch-items">
+            <li>部落格 <span class="kol-tag" style="font-size:10px">SEO 高搜量</span>：雷擊木是什麼？為什麼被雷擊中的木頭反而能辟邪淨化？⸺從民俗信仰到芳療應用</li>
+            <li>部落格 <span class="kol-tag" style="font-size:10px">SEO 高搜量</span>：鬼月可以做什麼？7 件讓自己能量更穩定的事</li>
+          </ul>
+          <p class="ch-note">💡 SEO 策略：「鬼月」「農曆七月禁忌」「淨化空間方法」等關鍵字在 7～8 月搜量明顯爆升，建議 7/15 前完成文章上架。</p>
+        </div>
+
+        <div class="channel">
+          <div class="ch-header"><span class="ch-icon">📱</span><span class="ch-name">FB / IG</span></div>
+          <ul class="ch-items">
+            <li><strong>FB 軟文（氛圍）：</strong>農曆七月不只是「鬼月」⸺用芳療觀點重新理解身心淨化的必要性</li>
+            <li><strong>FB 軟文（氛圍）：</strong>農曆七月，你有沒有感覺空間裡多了一些說不清楚的沉重感？⸺淨化符仔水如何讓能量重新流動</li>
+            <li><strong>FB 軟文（敏感體質）：</strong>敏感體質的人為什麼農曆七月特別累？⸺那些說不清楚的頭重、胸悶、莫名不安，可能不只是身體的問題</li>
+            <li><strong>FB 軟文（時事）：</strong>最近工作卡、人際關係緊繃、睡眠質量差？農曆七月的身心清理從這裡開始</li>
+            <li><strong>FB 軟文（品牌）：</strong>2026 法力無邊版為什麼是今年最值得入手的淨化商品⸺從 2021 走到現在的故事</li>
+            <li><strong>IG 限動：</strong>你有敏感體質嗎？農曆七月有什麼感受？（投票互動）</li>
+            <li><strong>IG 限動：</strong>日常使用情境連續劇（書包 / 車內 / 旅館 / 辦公桌）</li>
+            <li><strong>IG 限動：</strong>你知道滾珠油可以塗在哪些部位嗎？⸺近身防護的正確使用方式（互動問答）</li>
+            <li><strong>短影片：</strong>平安淨化儀式示範（空間用符仔水 + 身體用滾珠油，完整流程）</li>
+          </ul>
+        </div>
+
+        <div class="channel">
+          <div class="ch-header"><span class="ch-icon">🎙</span><span class="ch-name">KOL 排程</span></div>
+          <div class="kol-direction">
+            <p style="font-size:12px; font-weight:500; color:var(--ember); margin-bottom:8px">✅ 已排程</p>
+
+            <div style="border:1px solid var(--ash); border-radius:8px; padding:12px; margin-bottom:10px; background:rgba(196,146,42,0.04)">
+              <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:6px">
+                <strong style="font-size:13px">通靈少婦</strong>
+                <span style="font-size:11px; color:var(--mist); background:var(--ash); padding:2px 8px; border-radius:10px">7 / 14 ~ 7 / 31</span>
+              </div>
+              <div class="kol-tag" style="margin-bottom:6px">能量 / 靈性系</div>
+              <p style="font-size:12px; line-height:1.7">時間橫跨預購末段到正式銷售初期，適合以「農曆七月前夕的能量防護準備」為切角，帶出符仔水與滾珠油的組合使用。強調三重陽氣 + 法力無邊版的稀缺性，製造正式開賣前的最後一波預購衝動。</p>
+              <p style="font-size:12px; line-height:1.7; margin-top:6px; color:var(--mist)">可加入「敏感體質」切角：以她自身的敏感感受帶入，說明為什麼農曆七月對敏感體質特別有感，以及滾珠油如何作為近身屏障。她的受眾與敏感體質族群重疊度高，這個語言會很自然。</p>
+            </div>
+
+            <div style="border:1px solid var(--ash); border-radius:8px; padding:12px; background:rgba(45,58,94,0.04)">
+              <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:6px">
+                <strong style="font-size:13px">懷疑論者</strong>
+                <span style="font-size:11px; color:var(--mist); background:var(--ash); padding:2px 8px; border-radius:10px">8 / 6 ~ 9 / 10</span>
+              </div>
+              <div class="kol-tag" style="margin-bottom:6px">生活風格系</div>
+              <p style="font-size:12px; line-height:1.7">貫穿整個正式銷售期。「懷疑論者」的角色定位可以反差切入：從「我不信這套」到「但農曆七月我還是噴了」，以理性日常使用者的視角降低消費門檻，觸及對能量說法半信半疑的受眾。滾珠油的近身防護感受（頭暈、肩頸緊繃）可能比符仔水更適合作為體感切點。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="channel channel-narrow">
+          <div class="ch-header"><span class="ch-icon">📧</span><span class="ch-name">EDM</span></div>
+          <ul class="ch-items">
+            <li><span class="send-badge">第二次發送</span></li>
+            <li>主旨：農曆七月開始了，你的淨化防護準備好了嗎？</li>
+            <li>內容：使用場景攻略 + 組合商品推薦 + 滿額贈提醒</li>
+          </ul>
+        </div>
+
+        <div class="channel channel-narrow">
+          <div class="ch-header"><span class="ch-icon">💬</span><span class="ch-name">LINE</span></div>
+          <ul class="ch-items">
+            <li><span class="send-badge">第二次發送</span></li>
+            <li>農曆七月到了，淨化符仔水正式開賣＋場景圖＋直達購買連結</li>
+          </ul>
+        </div>
+
+        <div class="channel channel-narrow">
+          <div class="ch-header"><span class="ch-icon">📩</span><span class="ch-name">簡訊</span></div>
+          <ul class="ch-items">
+            <li>暫無<br><span class="ch-note">（主要依賴 EDM + LINE 推播）</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ═══ PHASE 4：收尾圓滿 ═══ -->
+    <div class="phase phase-4">
+      <div class="phase-sidebar">
+        <div class="phase-name">收尾圓滿<br>收尾期</div>
+        <div class="phase-date">✨ 9 / 02 ~ 9 / 10<br>（農曆七月結尾）</div>
+        <div class="phase-theme">「農曆七月收尾，<br>但淨化的能量會繼續守護你」</div>
+      </div>
+      <div class="phase-content">
+
+        <div class="channel">
+          <div class="ch-header"><span class="ch-icon">🌐</span><span class="ch-name">官網</span></div>
+          <ul class="ch-items">
+            <li>好評回饋整理上線（文字心得 + 使用情境截圖）</li>
+            <li>部落格 <span class="kol-tag" style="font-size:10px">SEO 長尾</span>：進出醫院、喪葬場合後，如何快速淨化身體和空間？⸺實用步驟指南</li>
+          </ul>
+          <p class="ch-note">💡 農曆七月結束後，「淨化空間方法」的長尾搜量仍持續，此篇可作為全年長青內容。</p>
+        </div>
+
+        <div class="channel">
+          <div class="ch-header"><span class="ch-icon">📱</span><span class="ch-name">FB / IG</span></div>
+          <ul class="ch-items">
+            <li><strong>FB 軟文（收尾氛圍）：</strong>農曆七月快結束了，讓這個夏天最後一波陽氣好好送走那些沉重⸺2026 法力無邊版，感謝陪你走過這個夏天</li>
+            <li><strong>FB 軟文（場景延伸）：</strong>農曆七月過了，但進出醫院、參加喪葬等不潔之處後的淨化需求仍然存在⸺符仔水是你全年都用得到的守護</li>
+            <li><strong>FB 軟文（好評）：</strong>用戶心得彙整整理上線</li>
+            <li><strong>IG 限動：</strong>使用心得截圖牆</li>
+            <li><strong>IG 限動：</strong>最後 3 天倒數⸺「把淨化能量帶進秋天」</li>
+          </ul>
+        </div>
+
+        <div class="channel">
+          <div class="ch-header"><span class="ch-icon">🎙</span><span class="ch-name">KOL 排程</span></div>
+          <div class="kol-direction">
+            <p style="font-size:12px; font-weight:500; color:var(--ember); margin-bottom:8px">✅ 已排程（進行中）</p>
+            <div style="border:1px solid var(--ash); border-radius:8px; padding:12px; background:rgba(45,58,94,0.04)">
+              <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:6px">
+                <strong style="font-size:13px">懷疑論者</strong>
+                <span style="font-size:11px; color:var(--mist); background:var(--ash); padding:2px 8px; border-radius:10px">～ 9 / 10</span>
+              </div>
+              <p style="font-size:12px; line-height:1.7">收尾期仍在排程內，可引導發布「使用一個月後的真實心得」，重點轉向農曆七月外的日常使用場景（通勤、出差、壓力大的時候），為全年銷售鋪路。可引用美智館長語錄作為自然收尾。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="channel channel-narrow">
+          <div class="ch-header"><span class="ch-icon">📧</span><span class="ch-name">EDM</span></div>
+          <ul class="ch-items">
+            <li><span class="send-badge second">第三次發送</span></li>
+            <li>主旨：最後幾天⸺把這份陽氣帶進秋天</li>
+            <li>內容：收尾優惠（如有）+ 好評精選 + 日常使用場景延伸</li>
+          </ul>
+        </div>
+
+        <div class="channel channel-narrow">
+          <div class="ch-header"><span class="ch-icon">💬</span><span class="ch-name">LINE</span></div>
+          <ul class="ch-items">
+            <li><span class="send-badge second">第三次發送</span></li>
+            <li>最後 3 天倒數提醒＋心得好評圖＋購買連結</li>
+          </ul>
+        </div>
+
+        <div class="channel channel-narrow">
+          <div class="ch-header"><span class="ch-icon">📩</span><span class="ch-name">簡訊</span></div>
+          <ul class="ch-items">
+            <li><span class="send-badge second">第二次發送</span></li>
+            <li>限量最後 X 瓶，農曆七月結束前完成淨化</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- /phases-wrapper -->
+</div><!-- /timeline -->
+
+<!-- ── FOOTNOTES ── -->
+<div class="footnotes">
+
+  <div class="fn-card">
+    <h3>📦 商品資訊</h3>
+    <ul>
+      <li>淨化。符仔水 30ml — 以午時水製成，含雷擊木純露、端午艾草純露，搭配秘魯聖木、菖蒲、墨西哥沉香、神聖羅勒、葡萄柚、檸檬精油。適用：空間淨化。</li>
+      <li style="margin-top:6px">淨化。滾珠油 5ml — 成分同上（不含純露），滾珠劑型可直接塗抹於身體。適用：近身防護。</li>
+    </ul>
+  </div>
+
+  <div class="fn-card">
+    <h3>📅 關鍵時間節點</h3>
+    <ul>
+      <li>6/19 預購開跑（最低價）</li>
+      <li>7/9 預購截止</li>
+      <li>8/10 正式銷售開始（農曆七月初）</li>
+      <li>9/10 正式銷售結束</li>
+      <li>建議：EDM / LINE 第二次發送在 8/10 前後 1～2 天</li>
+    </ul>
+  </div>
+
+  <div class="fn-card">
+    <h3>🎙 KOL 排程總覽</h3>
+    <ul>
+      <li style="margin-bottom:8px"><strong>通靈少婦</strong>｜7 / 14 ~ 7 / 31<br>
+        <span style="color:#6b7c6e; font-size:12px">能量 / 靈性系。預購末段 → 正式銷售初期，以「農曆七月前夕準備」切角，強調三重陽氣稀缺性</span></li>
+      <li><strong>懷疑論者</strong>｜8 / 6 ~ 9 / 10<br>
+        <span style="color:#6b7c6e; font-size:12px">生活風格系。貫穿主力期至收尾，以「半信半疑的日常用戶」反差視角降低消費門檻，滾珠油體感切點為主</span></li>
+    </ul>
+    <p style="margin-top:10px; font-size:12px; color:var(--ember)">⚠️ 預告期（端午預告）及 預購期（預購期）尚無 KOL 排程，如需補強請另行洽談</p>
+  </div>
+
+  <div class="fn-card">
+    <h3>⚡ 2026 核心傳播主軸</h3>
+    <ul>
+      <li><strong>法力無邊版：</strong>午時水 ＋ 雷擊木純露 ＋ 端午曬過的艾草 ＝ 三年疊加臻至完整</li>
+      <li><strong>創辦人語錄：</strong>「這已經是午時水最完美的比例和狀態了，不能再更好了。」— 美智館長</li>
+      <li><strong>進化時間軸：</strong>2021 初代符仔水 → 2024 加入雷擊木純露 → 2025 加入端午曬過的艾草純露 → 2026 宣告法力無邊版完成</li>
+      <li><strong>稀缺性訴求：</strong>限量生產＋一年一次端午製程，錯過只能等明年</li>
+    </ul>
+  </div>
+
+  <div class="fn-card" style="border-left: 3px solid var(--sage);">
+    <h3>🔍 SEO 部落格主題建議（有搜尋量）</h3>
+    <ul>
+      <li><strong>高搜量季節性：</strong>「鬼月禁忌」「農曆七月可以做什麼」「鬼月淨化方法」⸺7～8 月搜量明顯爆升，建議 7/15 前上架</li>
+      <li><strong>長尾場景型：</strong>「進出醫院後怎麼淨化」「喪葬場合回來要怎麼處理」「飯店房間感覺怪怪的怎麼辦」⸺有明確意圖，轉換率高</li>
+      <li><strong>成分教育型：</strong>「雷擊木是什麼」「菖蒲端午辟邪原理」「艾草泡澡功效」⸺常年有搜量，可做品牌信任基礎</li>
+      <li><strong>避免：</strong>「符仔水和滾珠油的差異」等純商品比較文⸺屬於品牌內部知識，幾乎無自然搜量，改放在商品頁說明即可</li>
+    </ul>
+  </div>
+
+  <div class="fn-card" style="border-left: 3px solid var(--thunder); grid-column: 1 / -1;">
+    <h3>💡 行銷補充建議</h3>
+    <ul style="columns: 2; column-gap: 32px;">
+      <li style="break-inside:avoid; margin-bottom:10px"><strong>🎟 先領券預熱（6/16～6/18）：</strong>在預購正式開跑前 2～3 天的預告 EDM / LINE 中直接附上 95 折券碼，6/19 開跑當天受眾手上已有券，可立即下單，縮短決策時間，比開跑後才發券更有效。</li>
+      <li style="break-inside:avoid; margin-bottom:10px"><strong>📸 製作過程的「直播式」記錄：</strong>端午當天收集午時水、採收曬過艾草的過程是最獨特的素材，建議用 IG / FB 限動做接近即時的記錄（早上發準備、午時發收集現場、下午發完成入庫），強化稀缺感與儀式感，讓未購買者產生 FOMO。</li>
+      <li style="break-inside:avoid; margin-bottom:10px"><strong>🔁 老客戶優先預購機制：</strong>對曾購買淨化系列的老客戶提前 3～5 天開放預購（搭配 LINE 私訊或 EDM 標記），既提升忠誠度，也能在正式開跑前先墊底銷量。</li>
+      <li style="break-inside:avoid; margin-bottom:10px"><strong>👥 UGC 收集機制：</strong>在正式銷售期設計一個回饋誘因（例如：分享使用心得到 IG 標記印茴可獲購物金），讓用戶自動產出內容，收尾期做心得牆時素材就有了。</li>
+      <li style="break-inside:avoid; margin-bottom:10px"><strong>📦 組合包的命名優化：</strong>「符仔水＋滾珠油」的組合可以取一個更有記憶點的名字，例如「空間 ＋ 身體完整防護組」或「鬼月全套淨化組」，在農曆七月期間更容易被搜到與分享。</li>
+      <li style="break-inside:avoid; margin-bottom:10px"><strong>🗓 KOL 波段節奏：</strong>通靈少婦（7/14-31）在農曆七月開始前製造能量討論，懷疑論者（8/6-9/10）接棒做整個主力期的日常使用覆蓋，兩者受眾定位互補，形成「信仰者 + 觀望者」的完整覆蓋。預告期 & 2 目前無 KOL，可考慮補一位開箱型 KOL 在 6/19 預購開跑時搭配。</li>
+    </ul>
+  </div>
+
+</div>
+</html>
+</body>
+</html>
