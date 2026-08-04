@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AJOWAN 印茴｜桃花貴人水 2026 行銷流程規劃</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600&family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500&display=swap');
+
+  :root {
+    --night: #241a35;
+    --dusk: #4a3a63;
+    --peach: #e2988c;
+    --peach-soft: #f3d9d0;
+    --gold: #c99a4e;
+    --star: #f3e6c8;
+    --cream: #fbf5ee;
+    --ink: #2a2130;
+    --ash: #e9dfd4;
+    --shadow: rgba(36,26,53,0.14);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans TC', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    min-height: 100vh;
+  }
+
+  /* ── HEADER：銀河鵲橋 ── */
+  header {
+    background: linear-gradient(180deg, #1c1428 0%, var(--night) 100%);
+    color: var(--star);
+    padding: 52px 40px 44px;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(1.5px 1.5px at 15% 20%, rgba(243,230,200,0.8), transparent),
+      radial-gradient(1px 1px at 25% 55%, rgba(243,230,200,0.6), transparent),
+      radial-gradient(1.5px 1.5px at 40% 15%, rgba(243,230,200,0.7), transparent),
+      radial-gradient(1px 1px at 60% 40%, rgba(243,230,200,0.5), transparent),
+      radial-gradient(1.5px 1.5px at 75% 25%, rgba(243,230,200,0.8), transparent),
+      radial-gradient(1px 1px at 85% 60%, rgba(243,230,200,0.5), transparent),
+      radial-gradient(1.5px 1.5px at 92% 18%, rgba(243,230,200,0.7), transparent);
+    background-size: 100% 100%;
+    pointer-events: none;
+  }
+  .bridge-arc {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 320px;
+    height: 140px;
+    opacity: 0.9;
+  }
+  .header-inner { position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; }
+  .brand-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+    letter-spacing: 0.4em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: clamp(24px, 3vw, 38px);
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+  }
+  h1 em {
+    font-style: normal;
+    color: var(--peach);
+    font-weight: 600;
+  }
+  .golden-tagline {
+    margin-top: 20px;
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(201,154,78,0.2), rgba(226,152,140,0.1));
+    border: 1px solid rgba(201,154,78,0.4);
+    border-left: 3px solid var(--gold);
+    color: var(--star);
+    font-size: 14px;
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 0.05em;
+    padding: 10px 18px;
+    border-radius: 4px;
+  }
+  .golden-tagline strong { color: var(--peach); font-weight: 600; font-size: 15px; }
+
+  .header-meta {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    font-size: 13px;
+    color: rgba(243,230,200,0.6);
+    letter-spacing: 0.05em;
+  }
+  .header-meta span { display: flex; align-items: center; gap: 6px; }
+  .header-meta strong { color: var(--star); }
+
+  /* ── LEGEND ── */
+  .legend {
+    background: var(--cream);
+    border-bottom: 1px solid var(--ash);
+    padding: 16px 40px;
+  }
+  .legend-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+  }
+  .legend-title {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--peach);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-right: 4px;
+  }
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  .tag-web   { background: rgba(74,58,99,0.12);   color: var(--dusk); border: 1px solid rgba(74,58,99,0.3); }
+  .tag-social{ background: rgba(226,152,140,0.15); color: #b85f4f; border: 1px solid rgba(226,152,140,0.4); }
+  .tag-edm   { background: rgba(201,154,78,0.14);  color: #96712f; border: 1px solid rgba(201,154,78,0.35); }
+  .tag-line  { background: rgba(36,26,53,0.08);    color: var(--night); border: 1px solid rgba(36,26,53,0.2); }
+  .tag-sms   { background: rgba(74,58,99,0.1);     color: var(--dusk); border: 1px solid rgba(74,58,99,0.25); }
+  .tag-kol   { background: rgba(226,152,140,0.12); color: #b85f4f; border: 1px solid rgba(226,152,140,0.3); }
+
+  /* ── TIMELINE WRAPPER ── */
+  .timeline {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 40px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* ── PHASE BLOCK ── */
+  .phase {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    border: 1px solid var(--ash);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 12px var(--shadow);
+    background: #fff;
+    transition: box-shadow 0.2s;
+  }
+  .phase:hover { box-shadow: 0 6px 28px var(--shadow); }
+
+  .phase-sidebar {
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    border-right: 1px solid var(--ash);
+    color: var(--ink);
+  }
+  /* 敘事色階：黃昏 → 暮色 → 星夜（七夕當晚）→ 破曉 */
+  .phase-1 .phase-sidebar { background: linear-gradient(160deg, #f3e4d4 0%, #ecd6c4 100%); }
+  .phase-2 .phase-sidebar { background: linear-gradient(160deg, #ddd0e0 0%, #c9b8d4 100%); }
+  .phase-3 .phase-sidebar { background: linear-gradient(160deg, #362a52 0%, #241a35 100%); color: var(--star); }
+  .phase-4 .phase-sidebar { background: linear-gradient(160deg, #fbe8dc 0%, #f3d3c0 100%); }
+
+  .phase-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    opacity: 0.55;
+    text-transform: uppercase;
+  }
+  .phase-name {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .phase-date {
+    font-size: 12px;
+    opacity: 0.65;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+  }
+  .phase-theme {
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 1.6;
+    opacity: 0.8;
+    font-style: italic;
+  }
+
+  .phase-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) repeat(3, minmax(100px, 120px));
+    border-top: none;
+  }
+
+  .channel {
+    padding: 20px 18px;
+    border-right: 1px solid var(--ash);
+    border-bottom: none;
+  }
+  .channel:last-child { border-right: none; }
+  .channel-narrow { font-size: 12px; }
+
+  .ch-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .ch-icon { font-size: 14px; }
+  .ch-name {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--dusk);
+    text-transform: uppercase;
+  }
+  .ch-items {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .ch-items li {
+    font-size: 12.5px;
+    line-height: 1.7;
+    color: #3a3040;
+  }
+  .ch-items li strong { color: var(--night); }
+  .ch-note {
+    margin-top: 10px;
+    font-size: 11px;
+    line-height: 1.6;
+    color: #8a7d95;
+    background: rgba(74,58,99,0.06);
+    padding: 8px 10px;
+    border-radius: 6px;
+  }
+  .send-badge {
+    display: inline-block;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background: rgba(226,152,140,0.18);
+    color: #b85f4f;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .send-badge.second { background: rgba(226,152,140,0.18); color: #b85f4f; }
+
+  .kol-direction {
+    font-size: 12px;
+  }
+  .kol-tag {
+    display: inline-block;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background: rgba(226,152,140,0.14);
+    color: #b85f4f;
+    margin-bottom: 4px;
+  }
+  .date-tag {
+    display: inline-block;
+    font-size: 10.5px;
+    font-weight: 600;
+    padding: 1px 8px;
+    border-radius: 10px;
+    background: rgba(201,154,78,0.16);
+    color: #96712f;
+    margin-right: 6px;
+    white-space: nowrap;
+  }
+
+  /* ── FOOTNOTES ── */
+  .footnotes {
+    max-width: 1400px;
+    margin: 20px auto 60px;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .fn-card {
+    background: #fff;
+    border: 1px solid var(--ash);
+    border-radius: 10px;
+    padding: 20px 22px;
+    box-shadow: 0 2px 10px var(--shadow);
+  }
+  .fn-card h3 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: var(--night);
+  }
+  .fn-card ul { list-style: none; }
+  .fn-card li {
+    font-size: 12.5px;
+    line-height: 1.75;
+    color: #3a3040;
+    padding-left: 14px;
+    position: relative;
+    margin-bottom: 4px;
+  }
+  .fn-card li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    color: var(--peach);
+    font-weight: 700;
+  }
+  .fn-card li strong { color: var(--night); }
+
+  @media (max-width: 1100px) {
+    .phase { grid-template-columns: 1fr; }
+    .phase-content { grid-template-columns: repeat(3, 1fr); }
+    .footnotes { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <svg class="bridge-arc" viewBox="0 0 320 140" xmlns="http://www.w3.org/2000/svg">
+    <path d="M 20 120 Q 160 10 300 120" fill="none" stroke="#c99a4e" stroke-width="1.2" stroke-dasharray="2 6" opacity="0.7"/>
+    <circle cx="20" cy="120" r="4" fill="#e2988c"/>
+    <circle cx="300" cy="120" r="4" fill="#f3e6c8"/>
+    <text x="4" y="138" fill="#e2988c" font-size="10" font-family="Noto Serif TC, serif" opacity="0.85">牽牛星</text>
+    <text x="278" y="138" fill="#f3e6c8" font-size="10" font-family="Noto Serif TC, serif" opacity="0.85">織女星</text>
+  </svg>
+  <div class="header-inner">
+    <div class="brand-label">AJOWAN 印茴 · Qixi Limited 2026</div>
+    <h1>桃花貴人水 <em>好緣</em> 行銷流程規劃</h1>
+    <div class="golden-tagline">核心定位：<strong>招好緣，而非只是戀愛商品</strong> ⸺ 以七夕限定「天孫水」為稀缺主軸，串聯姻緣、貴人、人際三種好緣</div>
+    <div class="header-meta">
+      <span>🗓 <strong>2026 / 08 / 12 ～ 09 / 23</strong></span>
+      <span>✨ <strong>七夕：2026 / 08 / 19（三）</strong></span>
+      <span>📦 <strong>桃花貴人水 ／ 桃花貴人御守</strong></span>
+    </div>
+  </div>
+</header>
+
+<div class="legend">
+  <div class="legend-inner">
+    <span class="legend-title">通路標示</span>
+    <span class="tag tag-web">🌐 官網／SEO</span>
+    <span class="tag tag-social">📱 FB／IG</span>
+    <span class="tag tag-kol">🎙 KOL</span>
+    <span class="tag tag-edm">📧 EDM</span>
+    <span class="tag tag-line">💬 LINE</span>
+    <span class="tag tag-sms">📩 簡訊</span>
+  </div>
+</div>
+
+<div class="timeline">
+<div class="phases-wrapper">
+
+  <!-- ═══ PHASE 1：好緣將近．預告期 ═══ -->
+  <div class="phase phase-1">
+    <div class="phase-sidebar">
+      <div class="phase-num">Phase 01</div>
+      <div class="phase-name">好緣將近<br>預告期</div>
+      <div class="phase-date">🌇 8 / 12 ～ 8 / 18<br>（預購前一週）</div>
+      <div class="phase-theme">「拋出議題，<br>用互動引發好奇心」</div>
+    </div>
+    <div class="phase-content">
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">🌐</span><span class="ch-name">官網</span></div>
+        <ul class="ch-items">
+          <li><span class="date-tag">8/12（三）</span>部落格 <span class="kol-tag" style="font-size:10px">觀念型</span>：桃花不是只有戀愛桃花？命理裡的四種桃花，你缺的可能是「貴人」不是「情人」</li>
+        </ul>
+      </div>
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">📱</span><span class="ch-name">FB / IG</span></div>
+        <ul class="ch-items">
+          <li><span class="date-tag">8/12（三）</span><strong>FB 軟文（破題）：</strong>「桃花」兩個字常常被誤會成只跟戀愛有關⸺其實它說的是你和這個世界順不順的緣分</li>
+          <li><span class="date-tag">8/14（五）</span><strong>FB 互動（抽獎）：</strong>四種桃花快速測驗（4 題選擇題，留言發送結果），完成測驗並留言即可抽 3 名送新品</li>
+          <li><span class="date-tag">8/17（一）</span><strong>FB 軟文（賣點）：</strong>天孫水是什麼？七夕當天採集的限定露水，一年只有一次</li>
+          <li><span class="date-tag">8/13（四）</span><strong>IG 限動：</strong>投票互動⸺「你最近最想要哪一種好緣？姻緣／貴人／人際淨化／關係穩定」</li>
+          <li><span class="date-tag">8/15（六）</span><strong>IG 限動：</strong>四種桃花小測驗（單選連續劇形式，測完立刻公布結果，不拖到下一則才揭曉）</li>
+          <li><span class="date-tag">8/16（日）</span><strong>短影片：</strong>「不是每個人都缺戀愛，但每個人都缺好緣」概念影片，結尾直接帶出天孫水是什麼</li>
+        </ul>
+      </div>
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">🎙</span><span class="ch-name">KOL 排程</span></div>
+        <div class="kol-direction">
+          <p style="font-size:12px; font-weight:500; color:#96712f; margin-bottom:8px">✅ 已排程</p>
+          <div style="border:1px solid var(--ash); border-radius:8px; padding:12px; background:rgba(74,58,99,0.04)">
+            <div class="kol-tag" style="margin-bottom:6px">能量／靈性系</div>
+            <div style="display:flex; flex-direction:column; align-items:flex-start; gap:4px; margin-bottom:8px">
+              <strong style="font-size:13px">懷疑論者的通靈觀察(團購)</strong>
+              <span class="date-tag" style="font-size:11px; margin-right:0;">8/6 ～ 9/16</span>
+            </div>
+            <p style="font-size:12px; line-height:1.7">8/6 起檔期已開跑，此階段以淨化系列（既有合作項目）為主，桃花貴人水尚未正式加入推廣（將於 9/3 起加入，見上市期）。可請懷疑論者的通靈觀察(團購)做一則「四種桃花你是哪一種」的限動投票或留言互動，讓好奇心當下就能轉成討論。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">📧</span><span class="ch-name">EDM</span></div>
+        <ul class="ch-items">
+          <li><span class="send-badge">第一次發送</span> <span class="date-tag">8/16（日）</span></li>
+          <li>主旨：七夕限定天孫水即將登場⸺一年只有一次的好緣</li>
+          <li>內容：四種桃花快速測驗連結 + 天孫水直接說明</li>
+        </ul>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">💬</span><span class="ch-name">LINE</span></div>
+        <ul class="ch-items">
+          <li><span class="send-badge">第一次發送</span> <span class="date-tag">8/18（二）</span></li>
+          <li>你缺的可能不是戀愛，是好緣⸺點我測測你的桃花類型，測完記得收藏，8/19 正式開賣會直接推播通知你</li>
+        </ul>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">📩</span><span class="ch-name">簡訊</span></div>
+        <ul class="ch-items">
+          <li>暫無<br><span class="ch-note">（觀念鋪陳期不使用簡訊，避免過早施壓）</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══ PHASE 2：鵲橋將至．預購期 ═══ -->
+  <div class="phase phase-2">
+    <div class="phase-sidebar">
+      <div class="phase-num">Phase 02</div>
+      <div class="phase-name">鵲橋將至<br>預購期</div>
+      <div class="phase-date">🌆 8 / 19 ～ 9 / 02<br>（七夕當天開跑，共 15 天）</div>
+      <div class="phase-theme">「開賣即七夕，<br>好緣同步降臨」</div>
+    </div>
+    <div class="phase-content">
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">🌐</span><span class="ch-name">官網</span></div>
+        <ul class="ch-items">
+          <li><span class="date-tag">8/19（三）</span>商品頁正式上線 + 預購開跑，同步更新「天孫水採集現場」紀實圖文，頁面加註「9/3 起陸續出貨」與「預購期最低價」</li>
+          <li><span class="date-tag">8/19（三）</span>部落格 <span class="kol-tag" style="font-size:10px">完整版</span>：天孫水是什麼？七夕限定的露水，為什麼只能等一年一次（文末直接放「立即預購」CTA）</li>
+          <li><span class="date-tag">8/22（六）</span>部落格 <span class="kol-tag" style="font-size:10px">SEO 高搜量</span>：牛郎織女的故事⸺一段被誤解千年的「好緣」寓言，其實跟戀愛無關的部分更值得看</li>
+        </ul>
+        <p class="ch-note">💡 商品頁需標明四種桃花對應情境（姻緣／人際貴人／斬孽緣／穩定關係），讓消費者能依自身需求對號入座，避免被誤讀成單一戀愛商品。「七夕」關鍵字搜量高峰恰好就落在預購開跑當天（8/19），建議「開賣」與「採集紀實」兩種內容同步操作，直接把搜量高峰轉換成預購。</p>
+      </div>
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">📱</span><span class="ch-name">FB / IG</span></div>
+        <ul class="ch-items">
+          <li><span class="date-tag">8/19（三）</span><strong>FB 軟文（開賣）：</strong>今天，牛郎與織女在銀河相會⸺我們同步開放預購，收下今年僅有一次的天孫水（預購期最低價）</li>
+          <li><span class="date-tag">8/21（五）</span><strong>FB 軟文（情境）：</strong>四種桃花，四種好緣：你適合的是紅鸞、天喜、沐浴，還是正印？</li>
+          <li><span class="date-tag">8/24（一）</span><strong>FB 軟文（故事）：</strong>紅娘的故事⸺古人怎麼看待「牽線」這件事，好緣從來不是憑空出現的</li>
+          <li><span class="date-tag">8/29（六）</span><strong>FB 軟文（倒數）：</strong>距離 9/2 預購截止只剩幾天，預購最低價只到這裡</li>
+          <li><span class="date-tag">8/19（三）</span><strong>IG 限動：</strong>「直播式」記錄採集天孫水現場（早上準備／當晚採集／隔日入庫），同步宣布預購開跑</li>
+          <li><span class="date-tag">8/20（四）</span><strong>IG 限動：</strong>四種桃花情境卡片輪播，附「立即預購」連結貼紙</li>
+          <li><span class="date-tag">8/30（日）起</span><strong>IG 限動：</strong>預購倒數貼紙（9/2 截止倒數）</li>
+          <li><span class="date-tag">8/25（二）</span><strong>短影片：</strong>天孫水採集全紀錄 + 桃花貴人御守開箱／新月祈願儀式三步驟示範</li>
+        </ul>
+      </div>
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">🎙</span><span class="ch-name">KOL 排程</span></div>
+        <div class="kol-direction">
+          <p style="font-size:12px; font-weight:500; color:#96712f; margin-bottom:8px">✅ 已排程</p>
+          <div style="border:1px solid var(--ash); border-radius:8px; padding:12px; background:rgba(226,152,140,0.06)">
+            <div class="kol-tag" style="margin-bottom:6px">身心靈／生活風格系</div>
+            <div style="display:flex; flex-direction:column; align-items:flex-start; gap:4px; margin-bottom:8px">
+              <strong style="font-size:13px">瑜珈老師 Leela</strong>
+              <span class="date-tag" style="font-size:11px; margin-right:0;">暫定 8/17～8/31</span>
+            </div>
+            <p style="font-size:12px; line-height:1.7">8/17 起主打好運平安水，桃花貴人水則於 8/25 起加入宣傳，檔期尚未最終確認。⚠️ 這組時間是依照舊排程對齊的，預購期改成 8/19 開跑後，建議與 Leela 重新確認檔期是否需要順延。瑜珈老師的角色適合切入「日常身心平衡」與好緣的連結，補足與懷疑論者的通靈觀察(團購)不同的受眾（較偏日常生活實踐、非純命理信仰）。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">📧</span><span class="ch-name">EDM</span></div>
+        <ul class="ch-items">
+          <li><span class="send-badge second">第二次發送</span> <span class="date-tag">8/19（三）</span></li>
+          <li>主旨：七夕當天，預購正式開跑⸺天孫水同步到位</li>
+          <li>內容：商品正式介紹 + 四種桃花對照表 + 採集現場紀實 + 預購最低價說明</li>
+          <li style="margin-top:6px"><span class="send-badge second">第三次發送</span> <span class="date-tag">8/31（一）</span></li>
+          <li>主旨：預購倒數最後 2 天⸺最低價只到 9/2</li>
+          <li>內容：預購倒數提醒 + 最後下單機會</li>
+        </ul>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">💬</span><span class="ch-name">LINE</span></div>
+        <ul class="ch-items">
+          <li><span class="send-badge second">第二次發送</span> <span class="date-tag">8/19（三）</span></li>
+          <li>桃花貴人水開放預購（預購期最低價）＋天孫水採集紀實＋直達購買連結</li>
+          <li style="margin-top:6px"><span class="send-badge second">第三次發送</span> <span class="date-tag">9/1（二）</span></li>
+          <li>預購倒數最後 1 天＋直達購買連結</li>
+        </ul>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">📩</span><span class="ch-name">簡訊</span></div>
+        <ul class="ch-items">
+          <li><span class="send-badge">第一次發送</span> <span class="date-tag">8/27（四）</span></li>
+          <li>七夕限定天孫水，預購倒數中，僅此 15 天</li>
+          <li style="margin-top:6px"><span class="send-badge second">第二次發送</span> <span class="date-tag">9/1（二）</span></li>
+          <li>預購倒數最後 2 天，9/2 截止</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══ PHASE 3：好緣出貨．上市期 ═══ -->
+  <div class="phase phase-3">
+    <div class="phase-sidebar">
+      <div class="phase-num">Phase 03</div>
+      <div class="phase-name">好緣出貨<br>上市期</div>
+      <div class="phase-date">✨ 9 / 03 ～ 9 / 16<br>（正式上市，共 14 天）</div>
+      <div class="phase-theme">「醞釀已滿，<br>好緣正式送到你手上」</div>
+    </div>
+    <div class="phase-content">
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">🌐</span><span class="ch-name">官網</span></div>
+        <ul class="ch-items">
+          <li><span class="date-tag">9/3（四）</span>商品頁狀態切換為「現貨供應」，正式開放非預購一般購買</li>
+          <li><span class="date-tag">9/5（六）</span>部落格 <span class="kol-tag" style="font-size:10px">SEO 長尾</span>：好桃花與斬孽緣⸺為什麼想招好緣，要先學會放掉爛緣分</li>
+        </ul>
+        <p class="ch-note">💡 「七夕」搜量高峰已在預購開跑當天（8/19）被承接，此階段 SEO 重點轉為「桃花運方法」「招貴人」等轉換意圖較明確的長尾字詞。上市期拉長為 14 天，內容可平均分散到兩週，避免第二週冷場。</p>
+      </div>
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">📱</span><span class="ch-name">FB / IG</span></div>
+        <ul class="ch-items">
+          <li><span class="date-tag">9/3（四）</span><strong>FB 軟文（上市）：</strong>天孫水已經到位⸺桃花貴人水正式開賣，四種好緣，你可以先從最需要的那一種開始</li>
+          <li><span class="date-tag">9/5（六）</span><strong>FB 軟文（情境）：</strong>不是要你談戀愛，是要你被這個世界溫柔對待⸺好緣的真正意思</li>
+          <li><span class="date-tag">9/7（一）</span><strong>FB 軟文（御守）：</strong>桃花貴人御守的新月祈願儀式，三個步驟把好緣帶在身上</li>
+          <li><span class="date-tag">9/12（六）</span><strong>FB 軟文（加碼）：</strong>上市期還沒結束，御守加購還來得及</li>
+          <li><span class="date-tag">9/3（四）</span><strong>IG 限動：</strong>開箱／到貨實拍，回顧七夕採集現場片段作為「這瓶水的由來」</li>
+          <li><span class="date-tag">9/6（日）</span><strong>IG 限動：</strong>四種桃花使用情境連續劇（面試前／合作洽談前／想斬斷爛緣分時／穩定關係時）</li>
+          <li><span class="date-tag">9/4（五）</span><strong>短影片：</strong>桃花貴人水正式開箱使用示範</li>
+        </ul>
+      </div>
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">🎙</span><span class="ch-name">KOL 排程</span></div>
+        <div class="kol-direction">
+          <p style="font-size:12px; font-weight:500; color:#96712f; margin-bottom:8px">✅ 已排程</p>
+          <div style="border:1px solid var(--ash); border-radius:8px; padding:12px; background:rgba(74,58,99,0.04)">
+            <div class="kol-tag" style="margin-bottom:6px">能量／靈性系</div>
+            <div style="display:flex; flex-direction:column; align-items:flex-start; gap:4px; margin-bottom:8px">
+              <strong style="font-size:13px">懷疑論者的通靈觀察(團購)</strong>
+              <span class="date-tag" style="font-size:11px; margin-right:0;">9/3～9/16 銷售桃花貴人水</span>
+            </div>
+            <p style="font-size:12px; line-height:1.7">整體合作檔期（淨化系列＋桃花貴人水）已延長至 9/16，9/3 起加入桃花貴人水銷售，銜接上市期開跑，可引導發布「收到現貨後的開箱心得」，帶動正式上市的購買轉換。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">📧</span><span class="ch-name">EDM</span></div>
+        <ul class="ch-items">
+          <li><span class="send-badge second">第四次發送</span> <span class="date-tag">9/3（四）</span></li>
+          <li>主旨：天孫水到貨了⸺桃花貴人水正式上市</li>
+          <li>內容：出貨通知 + 四種桃花完整介紹 + 組合購買優惠</li>
+        </ul>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">💬</span><span class="ch-name">LINE</span></div>
+        <ul class="ch-items">
+          <li><span class="send-badge second">第四次發送</span> <span class="date-tag">9/3（四）</span></li>
+          <li>正式上市圖文＋現貨開賣提醒＋直達購買連結</li>
+        </ul>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">📩</span><span class="ch-name">簡訊</span></div>
+        <ul class="ch-items">
+          <li><span class="send-badge second">第三次發送</span> <span class="date-tag">9/4（五）</span></li>
+          <li>桃花貴人水正式上市，好緣現貨供應中</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══ PHASE 4：好緣長留．收尾期 ═══ -->
+  <div class="phase phase-4">
+    <div class="phase-sidebar">
+      <div class="phase-num">Phase 04</div>
+      <div class="phase-name">好緣長留<br>收尾期</div>
+      <div class="phase-date">🌅 9 / 17 ～ 9 / 23<br>（上市後一週）</div>
+      <div class="phase-theme">「七夕過了，<br>但好緣可以留到日常」</div>
+    </div>
+    <div class="phase-content">
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">🌐</span><span class="ch-name">官網</span></div>
+        <ul class="ch-items">
+          <li><span class="date-tag">9/17（四）</span>好評／使用心得整理上線（文字心得 + 使用情境截圖）</li>
+          <li><span class="date-tag">9/19（六）</span>部落格 <span class="kol-tag" style="font-size:10px">SEO 長青</span>：桃花貴人水補充能量⸺日常怎麼用、多久補一次，把好緣留在生活裡</li>
+        </ul>
+        <p class="ch-note">💡 七夕熱度過後，「補充能量」「日常使用」類長尾字詞仍有穩定搜量，此篇可作全年長青內容，並導流至御守加購。</p>
+      </div>
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">📱</span><span class="ch-name">FB / IG</span></div>
+        <ul class="ch-items">
+          <li><span class="date-tag">9/17（四）</span><strong>FB 軟文（收尾）：</strong>七夕過了，但好緣不會只停在這一天⸺桃花貴人水是你全年都能補充的日常儀式</li>
+          <li><span class="date-tag">9/18（五）</span><strong>FB 軟文（好評）：</strong>用戶心得整理上線，這個七夕，大家都遇到了什麼好緣？</li>
+          <li><span class="date-tag">9/20（日）</span><strong>FB 軟文（延伸）：</strong>水用完了怎麼辦？搭配桃花貴人御守，把好緣的能量延續下去</li>
+          <li><span class="date-tag">9/18（五）</span><strong>IG 限動：</strong>使用心得截圖牆</li>
+          <li><span class="date-tag">9/22（二）</span><strong>IG 限動：</strong>最後倒數⸺「明年七夕才會再有天孫水」</li>
+        </ul>
+      </div>
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">🎙</span><span class="ch-name">KOL 排程</span></div>
+        <div class="kol-direction">
+          <p style="font-size:12px; font-weight:500; color:#8a7d95; margin-bottom:8px">⏹ 檔期已結束</p>
+          <div style="border:1px solid var(--ash); border-radius:8px; padding:12px; background:rgba(74,58,99,0.04)">
+            <p style="font-size:12px; line-height:1.7">懷疑論者的通靈觀察(團購) 整體合作檔期（8/6～9/16，含桃花貴人水銷售）已在收尾期開始（9/17）前結束，收尾期沒有安排 KOL 活動。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">📧</span><span class="ch-name">EDM</span></div>
+        <ul class="ch-items">
+          <li><span class="send-badge second">第五次發送</span> <span class="date-tag">9/18（五）</span></li>
+          <li>主旨：好緣不只留在七夕⸺最後補貨機會</li>
+          <li>內容：好評精選 + 御守加購優惠（如有）+ 日常使用場景延伸</li>
+        </ul>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">💬</span><span class="ch-name">LINE</span></div>
+        <ul class="ch-items">
+          <li><span class="send-badge second">第五次發送</span> <span class="date-tag">9/18（五）</span></li>
+          <li>心得好評圖＋御守加購提醒＋購買連結</li>
+        </ul>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">📩</span><span class="ch-name">簡訊</span></div>
+        <ul class="ch-items">
+          <li>暫無<br><span class="ch-note">（收尾期主要依賴 EDM + LINE 推播，避免過度施壓）</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</div><!-- /phases-wrapper -->
+</div><!-- /timeline -->
+
+<!-- ── FOOTNOTES ── -->
+<div class="footnotes">
+
+  <div class="fn-card">
+    <h3>🎙 KOL 排程總覽</h3>
+    <ul>
+      <li style="margin-bottom:8px"><strong>懷疑論者的通靈觀察(團購)</strong>｜8 / 6 ～ 9 / 16（含淨化系列＋桃花貴人水）<br>
+        <span style="color:#8a7d95; font-size:12px">能量／靈性系。桃花貴人水於 9/3 起加入銷售，銜接上市期開跑，整體檔期已延長至 9/16</span></li>
+      <li><strong>瑜珈老師 Leela</strong>｜暫定 8 / 17 ～ 8 / 31（未定，待確認）<br>
+        <span style="color:#8a7d95; font-size:12px">身心靈／生活風格系。主打好運平安水 + 桃花貴人水，落在預購期前段，補足日常生活實踐向的受眾</span></li>
+    </ul>
+    <p style="margin-top:10px; font-size:12px; color:#b85f4f">⚠️ Leela 檔期是照舊排程訂的，預購期改為 8/19 開跑後，這組時間還在跟她確認是否要順延。</p>
+  </div>
+
+  <div class="fn-card">
+    <h3>📦 商品資訊（部分待確認）</h3>
+    <ul>
+      <li>桃花貴人水 — 以七夕限定「天孫水」（七夕露水 + 大馬士革玫瑰）為核心，對應紅鸞／天喜／沐浴／正印四種桃花能量。前中後調香氣文案待補。</li>
+      <li style="margin-top:6px">桃花貴人御守 — 組合內容物待確認（初步含粉晶紅線、桃花許願卡、桃花貴人水、御守袋），搭配新月祈願儀式三步驟使用。</li>
+      <li style="margin-top:6px">⚠️ 尚未確認：定價、預購與正式開賣瓶數上限、御守實際內容物、香氣調性文案。建議於預告期文案定稿前補齊。</li>
+    </ul>
+  </div>
+
+  <div class="fn-card">
+    <h3>📅 關鍵時間節點</h3>
+    <ul>
+      <li>8/12 預告期開始，直接公開天孫水資訊，主打互動測驗與抽獎</li>
+      <li>8/19（三）七夕當天，預購開跑同步進行天孫水採集紀實，CTA 為「立即預購」</li>
+      <li>9/02 預購截止</li>
+      <li>9/03 正式上市，開放現貨購買</li>
+      <li>9/16 上市期結束</li>
+      <li>9/23 收尾期結束</li>
+      <li>建議：EDM / LINE 於 8/19 當天同步發送「預購開跑＋採集現場」訊息，把七夕當天的搜量與話題直接導向預購</li>
+    </ul>
+  </div>
+
+  <div class="fn-card">
+    <h3>⚡ 2026 核心傳播主軸</h3>
+    <ul>
+      <li><strong>好緣，而非戀愛限定：</strong>四種桃花對應姻緣、貴人、斬孽緣、穩定關係，讓男性、已婚、職場族群都有購買理由</li>
+      <li><strong>天孫水稀缺性：</strong>七夕當日露水採集，一年僅此一次，錯過即需再等 365 天</li>
+      <li><strong>互動＋即時 CTA 節奏：</strong>不刻意賣關子，預告期就直接公開天孫水資訊，但用測驗、投票、抽獎等互動形式包裝，每則內容都附一個能馬上做的行動（留言／參加抽獎／預購），避免消費者因等待「晚點揭曉」而流失注意力</li>
+      <li><strong>故事載體：</strong>牛郎織女＝等待與重逢，紅娘＝牽線與成全，皆延伸為「好緣」而非只談愛情</li>
+      <li><strong>使用情境儀式化：</strong>面試前、談合作前、新月時使用，讓「招好緣」落地為具體行為</li>
+    </ul>
+  </div>
+
+  <div class="fn-card" style="border-left: 3px solid var(--dusk);">
+    <h3>🔍 SEO 部落格主題建議</h3>
+    <ul>
+      <li><strong>高搜量節慶型：</strong>「七夕」「桃花運」「招桃花方法」⸺8 月中旬搜量明顯爆升，正好落在預購開跑當天（8/19），建議前後三天完成上架</li>
+      <li><strong>觀念破框型：</strong>「桃花不是只有戀愛」「四種桃花是什麼」⸺承接「招好緣」定位，建立品牌差異化認知</li>
+      <li><strong>故事延伸型：</strong>「牛郎織女的故事」「紅娘的故事」⸺文化故事類長年有基礎搜量，適合作內容行銷素材</li>
+      <li><strong>長尾場景型：</strong>「桃花貴人水補充能量」「好桃花與斬孽緣」⸺轉換意圖明確，適合收尾期承接</li>
+    </ul>
+  </div>
+
+  <div class="fn-card" style="border-left: 3px solid var(--peach);">
+    <h3>💡 行銷補充建議</h3>
+    <ul>
+      <li style="margin-bottom:8px"><strong>🎟 老客戶優先預購：</strong>對曾購買淨化系列或其他印茴商品的老客戶，於 8/19 正式預購前 2～3 天開放優先預訂，兼顧忠誠度與墊底銷量。</li>
+      <li style="margin-bottom:8px"><strong>📸 採集現場紀實：</strong>七夕當天的天孫水採集是最獨特的素材，比照淨化系列做法用限動做接近即時的記錄，強化稀缺感與 FOMO。</li>
+      <li style="margin-bottom:8px"><strong>🧭 四種桃花對號測驗：</strong>預告期上線的小測驗可延用到上市期作為導購工具，測完直接導向對應商品／情境文案，降低選擇門檻。</li>
+      <li style="margin-bottom:8px"><strong>👥 UGC 收集機制：</strong>正式銷售期設計回饋誘因（如分享心得標記印茴可獲購物金），為收尾期心得牆準備素材。</li>
+      <li style="margin-bottom:8px"><strong>📦 組合命名優化：</strong>「桃花貴人水＋御守」組合可取一個更好記的名字（例如「好緣完整組」），提升分享與搜尋辨識度。</li>
+      <li style="margin-bottom:8px"><strong>⚠️ 待補事項提醒：</strong>正式進入預告期前，需先確認商品定價、瓶數限量、御守內容物與香氣文案，避免文宣先行卻與實際商品規格不符。</li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>
