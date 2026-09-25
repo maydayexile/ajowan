@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>AJOWAN 印茴｜好好睡噴霧 2026 行銷流程規劃</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600&family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500&display=swap');
+
+  :root {
+    --night: #1f2640;
+    --dusk: #3e4a72;
+    --peach: #d98a4e;
+    --peach-soft: #f5e2cf;
+    --gold: #c9a45c;
+    --star: #eef0f4;
+    --cream: #f4f5f8;
+    --ink: #262a3a;
+    --ash: #dde1ea;
+    --muted: #7f879c;
+    --shadow: rgba(31,38,64,0.12);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    min-height: 100vh;
+  }
+
+  /* ── HEADER：中秋月夜 ── */
+  header {
+    background: linear-gradient(180deg, #151a2e 0%, var(--night) 70%, #2c3558 100%);
+    color: var(--star);
+    padding: 52px 40px 44px;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(1.5px 1.5px at 12% 22%, rgba(238,240,244,0.8), transparent),
+      radial-gradient(1px 1px at 28% 60%, rgba(238,240,244,0.5), transparent),
+      radial-gradient(1.5px 1.5px at 42% 14%, rgba(238,240,244,0.7), transparent),
+      radial-gradient(1px 1px at 58% 44%, rgba(238,240,244,0.4), transparent),
+      radial-gradient(1px 1px at 66% 20%, rgba(238,240,244,0.6), transparent);
+    pointer-events: none;
+  }
+  .moon {
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 150px;
+    height: 150px;
+  }
+  .header-inner { position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; }
+  .brand-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+    letter-spacing: 0.4em;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: clamp(24px, 3vw, 38px);
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+  }
+  h1 em { font-style: normal; color: #f0c58f; font-weight: 600; }
+  .golden-tagline {
+    margin-top: 20px;
+    display: inline-block;
+    max-width: 780px;
+    background: rgba(201,164,92,0.12);
+    border: 1px solid rgba(201,164,92,0.4);
+    border-left: 3px solid var(--gold);
+    color: var(--star);
+    font-size: 14px;
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 0.05em;
+    line-height: 1.8;
+    padding: 10px 18px;
+    border-radius: 4px;
+  }
+  .golden-tagline strong { color: #f0c58f; font-weight: 600; font-size: 15px; }
+  .header-meta {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    font-size: 13px;
+    color: rgba(238,240,244,0.6);
+    letter-spacing: 0.05em;
+  }
+  .header-meta span { display: flex; align-items: center; gap: 6px; }
+  .header-meta strong { color: var(--star); }
+
+  /* ── LEGEND ── */
+  .legend { background: var(--cream); border-bottom: 1px solid var(--ash); padding: 16px 40px; }
+  .legend-inner { max-width: 1400px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
+  .legend-title { font-size: 12px; letter-spacing: 0.15em; color: var(--dusk); font-weight: 500; margin-right: 4px; }
+  .tag { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; padding: 4px 10px; border-radius: 20px; font-weight: 500; }
+  .tag-web    { background: rgba(62,74,114,0.10); color: var(--dusk); border: 1px solid rgba(62,74,114,0.3); }
+  .tag-social { background: rgba(217,138,78,0.12); color: #a8622f; border: 1px solid rgba(217,138,78,0.4); }
+  .tag-edm    { background: rgba(201,164,92,0.14); color: #8c6d2c; border: 1px solid rgba(201,164,92,0.35); }
+  .tag-line   { background: rgba(31,38,64,0.07); color: var(--night); border: 1px solid rgba(31,38,64,0.2); }
+  .tag-sms    { background: rgba(62,74,114,0.08); color: var(--dusk); border: 1px solid rgba(62,74,114,0.25); }
+  .tag-kol    { background: rgba(217,138,78,0.10); color: #a8622f; border: 1px solid rgba(217,138,78,0.3); }
+
+  /* ── TIMELINE ── */
+  .timeline { max-width: 1400px; margin: 0 auto; padding: 40px 40px 20px; }
+
+  .phase {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    border: 1px solid var(--ash);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 12px var(--shadow);
+    background: #fff;
+  }
+  .phase-sidebar {
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-right: 1px solid var(--ash);
+    color: var(--ink);
+  }
+  /* 敘事色階：月升 → 月下 → 深夜 → 破曉 */
+  .phase-1 .phase-sidebar { background: linear-gradient(160deg, #e6e3ee 0%, #d6d3e4 100%); }
+  .phase-2 .phase-sidebar { background: linear-gradient(160deg, #c9d0e2 0%, #b3bdd6 100%); }
+  .phase-3 .phase-sidebar { background: linear-gradient(160deg, #323c62 0%, #1f2640 100%); color: var(--star); }
+  .phase-4 .phase-sidebar { background: linear-gradient(160deg, #f6ece0 0%, #eedcc6 100%); }
+  .phase-4 { border-style: dashed; }
+
+  .phase-num { font-family: 'Cormorant Garamond', serif; font-size: 12px; letter-spacing: 0.3em; opacity: 0.6; }
+  .phase-name { font-family: 'Noto Serif TC', serif; font-size: 18px; font-weight: 600; line-height: 1.4; }
+  .phase-date { font-size: 12px; opacity: 0.7; letter-spacing: 0.03em; line-height: 1.6; }
+  .phase-theme { margin-top: 6px; font-size: 12px; line-height: 1.6; opacity: 0.85; font-family: 'Noto Serif TC', serif; }
+  .pending-flag {
+    margin-top: 6px; align-self: flex-start;
+    font-size: 11px; padding: 2px 8px; border-radius: 10px;
+    background: rgba(217,138,78,0.18); color: #a8622f; font-weight: 600;
+  }
+
+  .phase-content { display: grid; grid-template-columns: repeat(3, 1fr) repeat(3, minmax(100px, 124px)); }
+  .channel { padding: 20px 18px; border-right: 1px solid var(--ash); }
+  .channel:last-child { border-right: none; }
+  .channel-narrow { font-size: 12px; }
+  .ch-header { display: flex; align-items: center; gap: 6px; margin-bottom: 10px; }
+  .ch-icon { font-size: 14px; }
+  .ch-name { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; color: var(--dusk); }
+  .ch-items { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .ch-items li { font-size: 12.5px; line-height: 1.7; color: #33384a; }
+  .ch-items li strong { color: var(--night); }
+  .ch-note {
+    margin-top: 10px; font-size: 11.5px; line-height: 1.65; color: #5f6780;
+    background: rgba(62,74,114,0.06); padding: 8px 10px; border-radius: 6px;
+  }
+  .send-badge {
+    display: inline-block; font-size: 10.5px; padding: 2px 8px; border-radius: 10px;
+    background: rgba(217,138,78,0.16); color: #a8622f; font-weight: 600; margin-bottom: 4px;
+  }
+  .kol-tag {
+    display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 10px;
+    background: rgba(217,138,78,0.12); color: #a8622f; margin-bottom: 4px;
+  }
+  .kol-tag.good { background: rgba(62,74,114,0.12); color: var(--dusk); }
+  .date-tag {
+    display: inline-block; font-size: 10.5px; font-weight: 600; padding: 1px 8px; border-radius: 10px;
+    background: rgba(201,164,92,0.16); color: #8c6d2c; margin-right: 6px; white-space: nowrap;
+  }
+  .muted { color: var(--muted); font-size: 12px; line-height: 1.7; }
+
+  /* ── PRICE TABLE ── */
+  .price-wrap { max-width: 1400px; margin: 0 auto; padding: 0 40px 10px; }
+  .price-card {
+    background: #fff; border: 1px solid var(--ash); border-radius: 12px;
+    box-shadow: 0 2px 12px var(--shadow); padding: 22px 24px; overflow-x: auto;
+  }
+  .price-card h3 { font-family: 'Noto Serif TC', serif; font-size: 15px; color: var(--night); margin-bottom: 4px; }
+  .price-card p.sub { font-size: 12px; color: var(--muted); margin-bottom: 14px; line-height: 1.7; }
+  table { border-collapse: collapse; width: 100%; min-width: 720px; font-size: 12.5px; }
+  th, td { padding: 9px 10px; border-bottom: 1px solid var(--ash); text-align: right; white-space: nowrap; }
+  th:first-child, td:first-child { text-align: left; }
+  thead th { font-weight: 600; color: var(--dusk); background: #f7f8fb; font-size: 12px; }
+  td.hl { color: #a8622f; font-weight: 600; }
+  tr.group td { background: #fafbfd; color: var(--dusk); font-weight: 600; text-align: left; }
+
+  /* ── FOOTNOTES ── */
+  .footnotes {
+    max-width: 1400px; margin: 20px auto 60px; padding: 0 40px;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+  }
+  .fn-card { background: #fff; border: 1px solid var(--ash); border-radius: 10px; padding: 20px 22px; box-shadow: 0 2px 10px var(--shadow); }
+  .fn-card h3 { font-family: 'Noto Serif TC', serif; font-size: 14px; margin-bottom: 10px; color: var(--night); }
+  .fn-card ul { list-style: none; }
+  .fn-card li { font-size: 12.5px; line-height: 1.75; color: #33384a; padding-left: 14px; position: relative; margin-bottom: 6px; }
+  .fn-card li::before { content: '·'; position: absolute; left: 0; color: var(--peach); font-weight: 700; }
+  .fn-card li strong { color: var(--night); }
+  .fn-card .sub { color: var(--muted); font-size: 12px; }
+
+  @media (max-width: 1100px) {
+    .phase { grid-template-columns: 1fr; }
+    .phase-sidebar { border-right: none; border-bottom: 1px solid var(--ash); }
+    .phase-content { grid-template-columns: repeat(3, 1fr); }
+    .channel { border-bottom: 1px solid var(--ash); }
+    .footnotes { grid-template-columns: 1fr 1fr; }
+    .moon { width: 100px; height: 100px; right: 30px; opacity: 0.6; }
+  }
+  @media (max-width: 680px) {
+    header { padding: 40px 22px 34px; }
+    .legend, .timeline, .price-wrap, .footnotes { padding-left: 16px; padding-right: 16px; }
+    .phase-content { grid-template-columns: 1fr; }
+    .channel { border-right: none; }
+    .footnotes { grid-template-columns: 1fr; }
+    .moon { top: 26px; transform: none; width: 70px; height: 70px; right: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <svg class="moon" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+        <stop offset="55%" stop-color="#eef0f4" stop-opacity="0.18"/>
+        <stop offset="100%" stop-color="#eef0f4" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="face" cx="42%" cy="40%" r="60%">
+        <stop offset="0%" stop-color="#fbfbfd"/>
+        <stop offset="100%" stop-color="#c7cfe0"/>
+      </radialGradient>
+    </defs>
+    <circle cx="75" cy="75" r="74" fill="url(#glow)"/>
+    <circle cx="75" cy="75" r="42" fill="url(#face)"/>
+    <circle cx="62" cy="64" r="7" fill="#b3bdd3" opacity="0.5"/>
+    <circle cx="86" cy="84" r="9" fill="#b3bdd3" opacity="0.4"/>
+    <circle cx="80" cy="58" r="4" fill="#b3bdd3" opacity="0.45"/>
+    <circle cx="64" cy="92" r="5" fill="#b3bdd3" opacity="0.35"/>
+  </svg>
+  <div class="header-inner">
+    <div class="brand-label">AJOWAN 印茴 · Mid-Autumn 2026</div>
+    <h1>好好睡噴霧 <em>今晚．好好睡</em> 行銷流程規劃</h1>
+    <div class="golden-tagline">核心定位：<strong>從「放鬆入睡」到「被守護的安穩」</strong>（太陰水版限量 300 瓶）<br>解憂系列延續去年的「放下」，太陰水版好好睡負責今年的「守護」：有月娘陪你睡，整夜安穩</div>
+    <div class="header-meta">
+      <span>🗓 <strong>2026 / 09 / 25 ～ 11 / 07</strong></span>
+      <span>🌕 <strong>太陰水採集：9 / 24（四）23:00 子時</strong></span>
+      <span>🔢 <strong>限量 300 瓶</strong></span>
+      <span>📦 <strong>好好睡噴霧 ／ 解憂馥芳純精油 ／ 解憂馥芳滾珠油</strong></span>
+    </div>
+  </div>
+</header>
+
+<div class="legend">
+  <div class="legend-inner">
+    <span class="legend-title">通路標示</span>
+    <span class="tag tag-web">🌐 官網／SEO</span>
+    <span class="tag tag-social">📱 FB／IG</span>
+    <span class="tag tag-kol">🎙 KOL</span>
+    <span class="tag tag-edm">📧 EDM</span>
+    <span class="tag tag-line">💬 LINE 群發</span>
+    <span class="tag tag-sms">📩 簡訊</span>
+  </div>
+</div>
+
+<div class="timeline">
+
+  <!-- ═══ PHASE 1 ═══ -->
+  <div class="phase phase-1">
+    <div class="phase-sidebar">
+      <div class="phase-num">Phase 01</div>
+      <div class="phase-name">月娘將圓<br>預告期</div>
+      <div class="phase-date">🌕 9 / 25 ～ 10 / 01<br>（中秋當天起，共 7 天）</div>
+      <div class="phase-theme">「昨夜的月光，<br>今年裝進了瓶子裡」</div>
+    </div>
+    <div class="phase-content">
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">🌐</span><span class="ch-name">官網</span></div>
+        <ul class="ch-items">
+          <li><span class="date-tag">9/25（五）</span><strong>領券頁（上線）：</strong>預告期開放領券，10/2～10/8 預購前 7 天購買好好睡噴霧，訂單再 95 折</li>
+          <li><span class="date-tag">9/25（五）</span><strong>部落格（節慶型）：</strong>中秋節也是月娘的生日？太陰星君與「太陰水」的民俗由來（文末放領券連結）</li>
+          <li><span class="date-tag">9/30（三）</span><strong>部落格（植物故事）：</strong>月桃是什麼？台灣山野常見的香氣植物，今年和太陰水一起蒸餾成純露</li>
+        </ul>
+        <div class="ch-note">💡 「中秋」相關搜尋的高峰落在 9/25～9/28 中秋連假，比預購開跑早一週。這段流量不導 LINE，改導向官網領券，讓領券名單成為 10/2 開跑時的第一批買家。</div>
+      </div>
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">📱</span><span class="ch-name">FB / IG</span></div>
+        <ul class="ch-items">
+          <li><span class="date-tag">9/25（五）</span><strong>FB 軟文（破題）：</strong>昨夜中秋子時，我們去山泉邊接了一瓶月光。太陰水版限量 300 瓶，先領券，預購前 7 天再 95 折（採集紀實照片＋領券連結）</li>
+          <li><span class="date-tag">9/28（一）</span><strong>FB 互動（猜成分）：</strong>猜猜今年新增了哪些植物成分？提示：一種來自台灣山野，一種藏在後調裡。留言猜猜看，9/30 公布答案</li>
+          <li><span class="date-tag">9/30（三）</span><strong>FB 軟文（公布答案）：</strong>答案是月桃與紫羅蘭，而月桃純露正是用中秋子時的太陰水蒸餾的。去年幫你放下，今年替你守夜。10/2 預購開跑，已領券的香民前 7 天再享 95 折</li>
+          <li><span class="date-tag">9/25（五）</span><strong>IG 限動：</strong>採集現場紀實（子時山泉、月光、裝瓶入庫），附領券連結貼紙</li>
+          <li><span class="date-tag">9/27（日）</span><strong>IG 限動：</strong>投票「你的夜晚最常卡在哪？腦袋停不下來／半夜醒來／做夢做不停／起床還是累」，前一項導向解憂，後三項導向太陰水版的「整夜安穩」</li>
+          <li><span class="date-tag">9/30（三）</span><strong>IG 限動：</strong>公布新增成分，2026 版香氣卡輪播（前中後調），附領券連結貼紙</li>
+          <li><span class="date-tag">9/28（一）</span><strong>短影片：</strong>中秋子時採集太陰水全紀錄，結尾帶出「今年加入好好睡噴霧」</li>
+        </ul>
+        <div class="ch-note">💡 新增成分（月桃、紫羅蘭）統一在 9/30 公布，9/25～9/29 的所有內容先不提這兩項，保留猜成分互動的懸念。</div>
+      </div>
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">🎙</span><span class="ch-name">KOL 排程</span></div>
+        <span class="kol-tag">暫無安排</span>
+        <p class="muted">預告期不建議安排 KOL。此階段的重點是讓官網累積領券名單，KOL 導購會和領券的價格互相干擾（價格比較見下方價格表）。</p>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">📧</span><span class="ch-name">EDM</span></div>
+        <div class="send-badge">第一次發送 9/29（二）</div>
+        <ul class="ch-items">
+          <li>主旨：中秋子時的太陰水，今年裝進了好好睡噴霧｜限量 300 瓶</li>
+          <li>內容：採集紀實＋太陰水的民俗由來＋領券入口（10/1 前領取）＋10/2 預購預告</li>
+        </ul>
+        <div class="ch-note">連假後第一個上班日發送，保留 3 天領券時間。新增成分留給 9/30 的 FB 公布答案，這封不提。</div>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">💬</span><span class="ch-name">LINE 群發</span></div>
+        <div class="send-badge">第一次群發 9/25（五）</div>
+        <ul class="ch-items">
+          <li>中秋節祝福＋太陰水採集紀實＋官網領券連結</li>
+        </ul>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">📩</span><span class="ch-name">簡訊</span></div>
+        <ul class="ch-items">
+          <li class="muted">暫無<br>（預告期不發簡訊，避免過早施壓）</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══ PHASE 2 ═══ -->
+  <div class="phase phase-2">
+    <div class="phase-sidebar">
+      <div class="phase-num">Phase 02</div>
+      <div class="phase-name">月下入夢<br>預購期</div>
+      <div class="phase-date">🌙 10 / 02 ～ 10 / 15<br>（共 14 天，前 7 天可用券）</div>
+      <div class="phase-theme">「先放下，<br>再被月娘守著睡」</div>
+    </div>
+    <div class="phase-content">
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">🌐</span><span class="ch-name">官網</span></div>
+        <ul class="ch-items">
+          <li><span class="date-tag">10/2（五）</span><strong>商品頁（預購上線）：</strong>更新為 2026 版長條圖與新文案，成分加入月桃純露與紫羅蘭原精，頁面標註「10/16 起陸續出貨」，預購開跑</li>
+          <li><span class="date-tag">10/2（五）</span><strong>商品頁（組合上架）：</strong>放下煩惱組、淨空大腦組、解憂放空組（旅行放鬆組同步上架，不進主要文案）</li>
+          <li><span class="date-tag">10/2（五）</span><strong>部落格（商品完整版）：</strong>太陰水的魔法，2026 好好睡噴霧新配方完整介紹（文末放「立即預購」）</li>
+          <li><span class="date-tag">10/7（三）</span><strong>部落格（SEO 情境型）：</strong>躺下後腦袋停不下來？睡前放鬆儀式三步驟（導解憂滾珠油＋好好睡噴霧）</li>
+          <li><span class="date-tag">10/12（一）</span><strong>部落格（民俗型）：</strong>做噩夢怎麼辦？民間流傳的安眠習俗，與中秋月娘的守護說法（以民俗角度書寫，導太陰水版）</li>
+        </ul>
+        <div class="ch-note">💡 領券 95 折只到 10/8，10/9 起改以留言抽獎和「預購價倒數」接力，不再提折扣券，避免顧客誤以為券還能用。</div>
+      </div>
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">📱</span><span class="ch-name">FB / IG</span></div>
+        <ul class="ch-items">
+          <li><span class="date-tag">10/2（五）</span><strong>FB 軟文（開賣）：</strong>今年，有月娘陪你睡。太陰水版好好睡噴霧預購開跑，限量 300 瓶，領券再 95 折只到 10/8</li>
+          <li><span class="date-tag">10/5（一）</span><strong>FB 軟文（解憂）：</strong>躺下之後，腦袋才開始上班。先用解憂滾珠油把思緒放下，再噴好好睡（帶放下煩惱組）</li>
+          <li><span class="date-tag">10/7（三）</span><strong>FB 軟文（守護）：</strong>睡著之後的那一段夜，誰來守著你？太陰水「驅除噩夢」的民俗說法（文末提醒領券 95 折剩 2 天）</li>
+          <li><span class="date-tag">10/9（五）</span><strong>FB 互動（抽獎）：</strong>留言分享「你睡前的小儀式」（泡澡、聽音樂、關燈前滑一下手機都算），抽出 3 名香民送好好睡噴霧（10/15 截止，10/16 公布），文末帶淨空大腦組</li>
+          <li><span class="date-tag">10/13（二）</span><strong>FB 軟文（倒數）：</strong>預購價剩最後 3 天，10/15 截止</li>
+          <li><span class="date-tag">10/2（五）</span><strong>IG 限動：</strong>預購開跑＋領券 95 折倒數貼紙（到 10/8）</li>
+          <li><span class="date-tag">10/6（二）</span><strong>IG 限動：</strong>「腦袋關不掉」情境連續劇（加班回家／明天要簡報／躺下開始回想今天），每則導向對應組合</li>
+          <li><span class="date-tag">10/9（五）</span><strong>IG 限動：</strong>抽獎活動分享，導向 FB 貼文留言</li>
+          <li><span class="date-tag">10/12（一）起</span><strong>IG 限動：</strong>預購倒數貼紙（10/15 截止），同步更新剩餘瓶數</li>
+          <li><span class="date-tag">10/6（二）</span><strong>短影片：</strong>好好睡儀式示範：滾珠油塗太陽穴、噴枕巾、關燈說晚安</li>
+        </ul>
+      </div>
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">🎙</span><span class="ch-name">KOL 排程</span></div>
+        <span class="kol-tag">不建議安排</span>
+        <p class="muted">KOL 單入價 $739 高於官網預購價 $735，前 7 天用券後官網更只要 $698。這段時間 KOL 的粉絲到官網比價會發現官網比較便宜，團購難以成立。</p>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">📧</span><span class="ch-name">EDM</span></div>
+        <div class="send-badge">第二次發送 10/2（五）</div>
+        <ul class="ch-items">
+          <li>主旨：今年，有月娘陪你睡｜太陰水版預購開跑</li>
+          <li>內容：新增成分月桃與紫羅蘭＋「先放下，再被守護」三組組合＋領券 95 折到 10/8＋10/16 起出貨</li>
+        </ul>
+        <div class="send-badge" style="margin-top:10px">第三次發送 10/13（二）</div>
+        <ul class="ch-items">
+          <li>主旨：預購價只到 10/15</li>
+          <li>內容：預購倒數＋太陰水版剩餘瓶數＋FB 留言抽獎入口（10/15 截止）</li>
+        </ul>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">💬</span><span class="ch-name">LINE 群發</span></div>
+        <div class="send-badge">第二次群發 10/2（五）</div>
+        <ul class="ch-items"><li>預購開跑＋領券 95 折提醒＋購買連結</li></ul>
+        <div class="send-badge" style="margin-top:10px">第三次群發 10/7（三）</div>
+        <ul class="ch-items"><li>領券 95 折剩 2 天（10/8 止）</li></ul>
+        <div class="send-badge" style="margin-top:10px">第四次群發 10/14（三）</div>
+        <ul class="ch-items"><li>預購最後 2 天</li></ul>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">📩</span><span class="ch-name">簡訊</span></div>
+        <div class="send-badge">第一次發送 10/7（三）</div>
+        <ul class="ch-items"><li>好好睡噴霧領券 95 折，明天 10/8 截止</li></ul>
+        <div class="send-badge" style="margin-top:10px">第二次發送 10/14（三）</div>
+        <ul class="ch-items"><li>預購價最後 2 天，10/15 截止</li></ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══ PHASE 3 ═══ -->
+  <div class="phase phase-3">
+    <div class="phase-sidebar">
+      <div class="phase-num">Phase 03</div>
+      <div class="phase-name">一夜好眠<br>上市期</div>
+      <div class="phase-date">✨ 10 / 16 ～ 10 / 31<br>（正式上市，共 16 天）</div>
+      <div class="phase-theme">「今晚，<br>有月娘陪你睡」</div>
+    </div>
+    <div class="phase-content">
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">🌐</span><span class="ch-name">官網</span></div>
+        <ul class="ch-items">
+          <li><span class="date-tag">10/16（五）</span><strong>商品頁（現貨）：</strong>切換為現貨供應，價格調整為上市價</li>
+          <li><span class="date-tag">10/20（二）</span><strong>部落格（植物故事）：</strong>紫羅蘭的香氣從哪裡來？今年新加入好好睡噴霧後調的平靜與安全感</li>
+          <li><span class="date-tag">10/28（三）</span><strong>部落格（SEO 選品型）：</strong>睡前香氣怎麼挑？苦橙葉、橙花、薰衣草與月桃的睡前香氣指南（導好好睡噴霧＋解憂馥芳純精油）</li>
+                  </ul>
+        <div class="ch-note">🔄 <strong>太陰水版售完後：</strong>商品頁改為一般版好好睡噴霧接續販售（同樣是新配方，只是不含太陰水），並標示「太陰水版已售完」，同時撤下太陰水圖卡。社群文案從「限量搶購」轉為「睡前儀式」與組合商品，太陰水只作為品牌故事回顧，不再當成購買理由。</div>
+      </div>
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">📱</span><span class="ch-name">FB / IG</span></div>
+        <ul class="ch-items">
+          <li><span class="date-tag">10/16（五）</span><strong>FB 軟文（上市）：</strong>太陰水版好好睡噴霧正式上市，預購的香民陸續收到貨了（同步公布預購期抽獎得獎名單）</li>
+          <li><span class="date-tag">10/19（一）</span><strong>FB 軟文（解憂精油）：</strong>擴香版的睡前儀式：水氧機滴解憂精油，枕巾噴好好睡（帶解憂放空組）</li>
+          <li><span class="date-tag">10/22（四）</span><strong>FB 軟文（故事）：</strong>唔唔睏，一暝大一寸。小時候有人哼著歌守在床邊，電扇聲、蟲鳴、棉被的觸感，今年的好好睡想還給你那種安心</li>
+          <li><span class="date-tag">10/23（五）</span><strong>FB 軟文（組合）：</strong>先放下，再被守護。放下煩惱組、淨空大腦組一次整理，依自己的夜晚狀態挑選</li>
+          <li><span class="date-tag">10/29（四）</span><strong>FB 軟文（心得）：</strong>收到貨的香民怎麼說？第一週使用心得整理</li>
+          <li><span class="date-tag">10/16（五）</span><strong>IG 限動：</strong>到貨實拍（若有 2026 太陰水版貼紙或編號，特寫拍出），回顧中秋子時採集片段作為「這瓶的由來」</li>
+          <li><span class="date-tag">10/20（二）</span><strong>IG 限動：</strong>睡前情境連續劇（加班回家／出差住旅館／孩子睡著後的自己時間／半夜醒來）</li>
+          <li><span class="date-tag">10/27（二）</span><strong>IG 限動：</strong>顧客心得截圖</li>
+          <li><span class="date-tag">10/17（六）</span><strong>短影片：</strong>好好睡噴霧開箱＋噴一下的實拍</li>
+        </ul>
+      </div>
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">🎙</span><span class="ch-name">KOL 排程</span></div>
+        <span class="kol-tag good">✅ 建議檔期 10/16 ～ 10/31</span>
+        <p class="muted">上市價單入 $755、2 瓶 $1435，KOL 價 $739、$1399 在這段期間才有明確優勢，粉絲比價後仍會選擇團購。</p>
+        <p class="muted" style="margin-top:8px">人選建議：生活風格或身心靈類型，受眾以上班族、睡前容易想太多的族群為主。內容方向為「睡前儀式七日紀錄」，由 KOL 分享自己睡前的使用習慣與感受，並帶放下煩惱組。</p>
+        <p class="muted" style="margin-top:8px">若太陰水版在上市期前售完，KOL 改賣一般版，合作文案需避免提到太陰水與限量。</p>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">📧</span><span class="ch-name">EDM</span></div>
+        <div class="send-badge">第四次發送 10/21（三）</div>
+        <ul class="ch-items">
+          <li>主旨：太陰水版到貨了，大家的第一晚怎麼睡？</li>
+          <li>內容：開箱與使用情境＋紫羅蘭植物故事（導 10/20 部落格）＋睡前儀式三步驟</li>
+        </ul>
+        <div class="send-badge" style="margin-top:10px">第五次發送 10/28（三）</div>
+        <ul class="ch-items">
+          <li>主旨：檔期優惠只到 10/31</li>
+          <li>內容：第一批心得＋組合與解憂系列檔期價＋太陰水版剩餘瓶數（已售完則改介紹一般版）</li>
+        </ul>
+        <div class="ch-note">上市當天的通知由 LINE、簡訊與 FB 負責。</div>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">💬</span><span class="ch-name">LINE 群發</span></div>
+        <div class="send-badge">第五次群發 10/16（五）</div>
+        <ul class="ch-items"><li>正式上市＋現貨開賣＋購買連結</li></ul>
+        <div class="send-badge" style="margin-top:10px">第六次群發 10/23（五）</div>
+        <ul class="ch-items"><li>組合商品提醒＋購買連結</li></ul>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">📩</span><span class="ch-name">簡訊</span></div>
+        <div class="send-badge">第三次發送 10/16（五）</div>
+        <ul class="ch-items"><li>太陰水版好好睡噴霧正式上市，現貨供應中</li></ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══ PHASE 4 ═══ -->
+  <div class="phase phase-4">
+    <div class="phase-sidebar">
+      <div class="phase-num">Phase 04</div>
+      <div class="phase-name">好眠長留<br>收尾期</div>
+      <div class="phase-date">🌅 11 / 01 ～ 11 / 07<br>（上市期後一週）</div>
+      <div class="phase-theme">「中秋過了，<br>安穩的夜留在日常」</div>
+      <span class="pending-flag">待決定是否執行</span>
+    </div>
+    <div class="phase-content">
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">🌐</span><span class="ch-name">官網</span></div>
+        <ul class="ch-items">
+          <li><span class="date-tag">11/2（一）</span><strong>商品頁（心得）：</strong>好評與使用心得整理上線（文字心得＋使用情境截圖）</li>
+          <li><span class="date-tag">11/4（三）</span><strong>部落格（SEO 長青）：</strong>枕頭噴霧怎麼用？噴哪裡、噴幾下、睡前多久噴，一套可以天天做的睡前香氣儀式</li>
+        </ul>
+        <div class="ch-note">💡 「睡前放鬆」「睡前儀式」類字詞全年都有穩定搜尋量，此篇可作長青內容，持續導流至好好睡噴霧與解憂系列。</div>
+      </div>
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">📱</span><span class="ch-name">FB / IG</span></div>
+        <ul class="ch-items">
+          <li><span class="date-tag">11/2（一）</span><strong>FB 軟文（好評）：</strong>太陰水版上市兩週，大家的睡前儀式長什麼樣子？香民心得整理（可一併收錄抽獎留言中分享的睡前小儀式）</li>
+                    <li><span class="date-tag">11/5（四）</span><strong>FB 軟文（延伸）：</strong>一瓶好好睡可以用多久？日常補貨與組合搭配</li>
+          <li><span class="date-tag">11/3（二）</span><strong>IG 限動：</strong>使用心得截圖牆</li>
+          <li><span class="date-tag">11/6（五）</span><strong>IG 限動：</strong>太陰水版剩餘瓶數倒數；若已售完，改為「太陰水版已售完，一般版照常供應，明年中秋見」</li>
+        </ul>
+      </div>
+
+      <div class="channel">
+        <div class="ch-header"><span class="ch-icon">🎙</span><span class="ch-name">KOL 排程</span></div>
+        <span class="kol-tag">視上市期成效決定</span>
+        <p class="muted">若上市期 KOL 成效好，可延長一週做「使用一個月後」的回訪心得；否則收尾期不安排 KOL。</p>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">📧</span><span class="ch-name">EDM</span></div>
+        <ul class="ch-items">
+          <li class="muted">暫無<br>（收尾期以 LINE 群發為主）</li>
+        </ul>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">💬</span><span class="ch-name">LINE 群發</span></div>
+        <div class="send-badge">第七次群發 11/3（二）</div>
+        <ul class="ch-items"><li>心得好評圖＋購買連結</li></ul>
+      </div>
+
+      <div class="channel channel-narrow">
+        <div class="ch-header"><span class="ch-icon">📩</span><span class="ch-name">簡訊</span></div>
+        <ul class="ch-items">
+          <li class="muted">暫無<br>（收尾期依賴 EDM 與 LINE，避免過度施壓）</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══ PRICE TABLE ═══ -->
+<div class="price-wrap">
+  <div class="price-card">
+    <h3>💰 各階段價格對照</h3>
+    <p class="sub">領券價以預購價再 95 折計算、四捨五入至整數，實際金額以 Shopline 結帳計算為準。KOL 價只在上市期低於官網價。「—」為未另設價格。</p>
+    <table>
+      <thead>
+        <tr><th>品項</th><th>原價</th><th>預購＋領券<br>10/2～10/8</th><th>預購價<br>10/2～10/15</th><th>KOL 價</th><th>上市價<br>10/16～10/31</th></tr>
+      </thead>
+      <tbody>
+        <tr class="group"><td colspan="6">好好睡噴霧 30ml（太陰水版與一般版同價）</td></tr>
+        <tr><td>1 瓶</td><td>$780</td><td class="hl">$698</td><td>$735</td><td>$739</td><td>$755</td></tr>
+        <tr><td>2 瓶</td><td>$1,560</td><td class="hl">$1,311</td><td>$1,380</td><td>$1,399</td><td>$1,435</td></tr>
+        <tr><td>4 瓶</td><td>$3,120</td><td class="hl">$2,469</td><td>$2,599</td><td>未設定</td><td>$2,650</td></tr>
+        <tr class="group"><td colspan="6">解憂系列（檔期內單一價格）</td></tr>
+        <tr><td>解憂馥芳純精油 1 瓶</td><td>$1,080</td><td>—</td><td>$990</td><td>—</td><td>$990</td></tr>
+        <tr><td>解憂馥芳純精油 2 瓶</td><td>$2,160</td><td>—</td><td>$1,890</td><td>—</td><td>$1,890</td></tr>
+        <tr><td>解憂馥芳滾珠油 1 瓶</td><td>$750</td><td>—</td><td>$699</td><td>—</td><td>$699</td></tr>
+        <tr><td>解憂馥芳滾珠油 2 瓶</td><td>$1,500</td><td>—</td><td>$1,350</td><td>—</td><td>$1,350</td></tr>
+        <tr class="group"><td colspan="6">主推組合（檔期內單一價格）</td></tr>
+        <tr><td>放下煩惱組（好好睡＋解憂滾珠）</td><td>$1,530</td><td>—</td><td>$1,350</td><td>—</td><td>$1,350</td></tr>
+        <tr><td>淨空大腦組（好好睡＋小靛人）</td><td>$1,460</td><td>—</td><td>$1,280</td><td>—</td><td>$1,280</td></tr>
+        <tr><td>解憂放空組（解憂精油＋滾珠）</td><td>$1,830</td><td>—</td><td>$1,555</td><td>—</td><td>$1,555</td></tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="footnotes">
+
+  <div class="fn-card">
+    <h3>⚡ 2026 核心傳播主軸</h3>
+    <ul>
+      <li><strong>從放鬆到守護：</strong>去年的商品頁主打「放空大腦、酣然入睡」；今年新增的太陰水（驅除噩夢）、月桃（安然自在）、紫羅蘭（安全感）都指向「整夜安穩、有人守著」，這是今年唯一的差異化主軸</li>
+      <li><strong>兩層分工：</strong>解憂系列＝放下（延續去年訴求，負責睡前讓腦袋安靜）；太陰水版好好睡＝守護（今年新增，負責睡著之後的整夜）</li>
+      <li><strong>太陰水稀缺性：</strong>中秋子時採集，一年只有一次，太陰水版限量 300 瓶</li>
+      <li><strong>搖籃曲的安心感：</strong>品名「唔唔睏一暝大一寸」本來就是被守著入睡的語感，和月娘的陰柔守護是同一個情緒</li>
+      <li><strong>月夜視覺：</strong>舊版長條圖以淺藍、米白的白天色調為主，今年社群、EDM、限動主視覺改用深藍月夜，第一眼就和去年區隔</li>
+      <li><strong>民俗故事載體：</strong>太陰水與月娘的說法一律以「民間說法」呈現，延續圖卡寫法</li>
+    </ul>
+  </div>
+
+  <div class="fn-card">
+    <h3>📅 關鍵時間節點</h3>
+    <ul>
+      <li>9/24（四）23:00 中秋子時採集太陰水</li>
+      <li>9/25（五）預告期開始，領券頁上線、LINE 中秋群發</li>
+      <li>9/25～9/28 中秋連假</li>
+      <li>10/2（五）預購開跑</li>
+      <li>10/8（四）領券 95 折截止</li>
+      <li>10/9（五）預購期留言抽獎開始（分享睡前小儀式，抽 3 名），10/15 截止、10/16 公布</li>
+      <li>10/15（四）預購截止</li>
+      <li>10/16（五）正式上市、預購陸續出貨</li>
+      <li>10/31（六）上市期結束</li>
+      <li>11/7（六）收尾期結束（待決定是否執行）</li>
+    </ul>
+  </div>
+
+  <div class="fn-card">
+    <h3>📦 商品資訊</h3>
+    <ul>
+      <li><strong>好好睡噴霧 30ml（太陰水版限量 300 瓶）</strong>｜2026 版月桃純露以中秋子時太陰水蒸餾，並新增紫羅蘭原精。前調：甜橙、檸檬薄荷、桔葉；中調：橙花純露、月桃純露、苦橙葉、真正薰衣草、喜馬拉雅天竺葵；後調：印度乳香、紫羅蘭原精。睡前 30 分鐘噴於枕巾。300 瓶售完後，由一般版接續販售：配方相同（含月桃純露與紫羅蘭原精），只是月桃純露不是用太陰水蒸餾。價格與太陰水版相同，商品頁沿用同一個品項切換。</li>
+      <li><strong>解憂馥芳純精油 5ml</strong>｜空間薰香或稀釋後穴位按摩，適合睡前擴香。蠶豆症患者禁用。</li>
+      <li><strong>解憂馥芳滾珠油 5ml</strong>｜塗抹太陽穴、風池穴、鎖骨，適合睡前儀式第一步。蠶豆症患者禁用。</li>
+      <li><strong>配角商品</strong>｜旅行放鬆組、五行情緒大禮包（長期）、小矮人系列與單方純精油（長期）只放商品頁與購物車，不進主要文案。</li>
+    </ul>
+  </div>
+
+  <div class="fn-card" style="border-left: 3px solid var(--dusk);">
+    <h3>🔍 SEO 部落格主題建議</h3>
+    <ul>
+      <li><strong>節慶型：</strong>「中秋節由來」「月娘生日」「太陰星君」，搜尋高峰在中秋連假，9/25 當天上架</li>
+      <li><strong>植物故事型：</strong>「月桃」「紫羅蘭」，兩種都是今年新增的成分，延續既有植物故事系列，也能長期導流</li>
+      <li><strong>民俗型：</strong>「做噩夢怎麼辦」「安眠習俗」，承接今年的「守護」主軸，以民俗角度書寫</li>
+      <li><strong>情境型：</strong>「睡前放鬆」「睡前腦袋停不下來」，承接解憂系列的角色</li>
+      <li><strong>選品與使用型：</strong>「睡前精油推薦」「枕頭噴霧怎麼用」，轉換意圖明確，適合上市期與收尾期</li>
+    </ul>
+  </div>
+
+  <div class="fn-card">
+    <h3>🎙 KOL 排程建議</h3>
+    <ul>
+      <li style="margin-bottom:8px"><strong>目前：暫無安排</strong></li>
+      <li style="margin-bottom:8px"><strong>建議檔期：10 / 16 ～ 10 / 31（上市期）</strong><br>
+        <span class="sub">預告期與預購期官網價格都低於 KOL 價，上市期 KOL 價才有優勢。</span></li>
+      <li style="margin-bottom:8px"><strong>建議類型：</strong>生活風格或身心靈系<br>
+        <span class="sub">受眾以上班族、睡前容易想太多的族群為主，主推放下煩惱組。</span></li>
+      <li><strong>邀約時程：</strong>若要趕上 10/16，建議 10/5 前完成邀約、10/12 前寄出商品。<br>
+        <span class="sub">4 瓶裝目前沒有 KOL 價，如要開放需補設定。</span></li>
+    </ul>
+  </div>
+
+  <div class="fn-card" style="border-left: 3px solid var(--peach);">
+    <h3>💡 行銷補充建議</h3>
+    <ul>
+      <li><strong>商品頁調整順序：</strong>把「太陰水的魔法」移到主視覺後的第二屏，讓今年的不同在第一時間出現</li>
+      <li><strong>2026 太陰水版貼紙與編號：</strong>瓶身與去年相同，實體上分不出新舊版。可考慮加貼紙或吊卡，並做 No.001／300 限量編號，開箱與 KOL 素材都更好拍（需確認生產可行性）</li>
+      <li><strong>採集素材分段使用：</strong>今晚的素材請分三份保留：預告期用紀實、預購期放商品頁、收尾期作為「這瓶的由來」回顧</li>
+      <li><strong>領券設定：</strong>9/25 領券頁上線前，設定好適用範圍（單入、多入及含好好睡噴霧的組合）與使用期限 10/2～10/8</li>
+      <li><strong>300 瓶的配額：</strong>抽獎保留 3 瓶，其餘開放販售。若太陰水版在 KOL 檔期前售完，KOL 改賣一般版</li>
+      <li><strong>商品頁切換清單：</strong>太陰水版售完時，要同步撤下長條圖中的「太陰水的魔法」圖卡，並把成分行的「月桃（太陰水蒸餾）」改回「月桃」，避免一般版被誤認為含太陰水</li>
+      <li><strong>加價購設定：</strong>購物車加價購 6 項、商品頁加購招財噴霧 $399 與好運平安水 $739，10/2 前完成設定</li>
+      <li><strong>長條圖數據：</strong>使用者回饋 86%／79%／33% 建議備妥調查方式與樣本數，KOL 或顧客詢問時可以回應</li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>
